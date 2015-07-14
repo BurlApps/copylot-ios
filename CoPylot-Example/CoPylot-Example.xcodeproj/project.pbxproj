@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41D559891A6EA41305ECDC68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF03C576A8281052ACD1522 /* libPods.a */; };
+		D31896DC1B55B07A00A60725 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31896DB1B55B07A00A60725 /* main.m */; };
+		D31896DF1B55B07A00A60725 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31896DE1B55B07A00A60725 /* AppDelegate.m */; };
+		D31896E21B55B07A00A60725 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31896E11B55B07A00A60725 /* ViewController.m */; };
+		D31896E51B55B07A00A60725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31896E31B55B07A00A60725 /* Main.storyboard */; };
+		D31896E71B55B07A00A60725 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31896E61B55B07A00A60725 /* Images.xcassets */; };
+		D31896EA1B55B07A00A60725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31896E81B55B07A00A60725 /* LaunchScreen.xib */; };
+		D31896F61B55B07A00A60725 /* CoPylot_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31896F51B55B07A00A60725 /* CoPylot_ExampleTests.m */; };
+		D31897141B55B09B00A60725 /* CPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897021B55B09B00A60725 /* CPBlock.m */; };
+		D31897151B55B09B00A60725 /* CPBlockValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897041B55B09B00A60725 /* CPBlockValue.m */; };
+		D31897161B55B09B00A60725 /* CoPylot.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897061B55B09B00A60725 /* CoPylot.m */; };
+		D31897171B55B09B00A60725 /* CPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897091B55B09B00A60725 /* CPConstants.m */; };
+		D31897181B55B09B00A60725 /* CPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D318970C1B55B09B00A60725 /* CPUtils.m */; };
+		D31897191B55B09B00A60725 /* CPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897101B55B09B00A60725 /* CPLabel.m */; };
+		D318971A1B55B09B00A60725 /* CPRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897131B55B09B00A60725 /* CPRequestHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D31896F01B55B07A00A60725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D31896CE1B55B07A00A60725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D31896D51B55B07A00A60725;
+			remoteInfo = "CoPylot-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FF03C576A8281052ACD1522 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB1F58192F7B7D4585E4D9E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D31896D61B55B07A00A60725 /* CoPylot-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoPylot-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31896DA1B55B07A00A60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31896DB1B55B07A00A60725 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D31896DD1B55B07A00A60725 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D31896DE1B55B07A00A60725 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D31896E01B55B07A00A60725 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D31896E11B55B07A00A60725 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D31896E41B55B07A00A60725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D31896E61B55B07A00A60725 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D31896E91B55B07A00A60725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D31896EF1B55B07A00A60725 /* CoPylot-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoPylot-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31896F41B55B07A00A60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31896F51B55B07A00A60725 /* CoPylot_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoPylot_ExampleTests.m; sourceTree = "<group>"; };
+		D31897011B55B09B00A60725 /* CPBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlock.h; sourceTree = "<group>"; };
+		D31897021B55B09B00A60725 /* CPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlock.m; sourceTree = "<group>"; };
+		D31897031B55B09B00A60725 /* CPBlockValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlockValue.h; sourceTree = "<group>"; };
+		D31897041B55B09B00A60725 /* CPBlockValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlockValue.m; sourceTree = "<group>"; };
+		D31897051B55B09B00A60725 /* CoPylot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoPylot.h; sourceTree = "<group>"; };
+		D31897061B55B09B00A60725 /* CoPylot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoPylot.m; sourceTree = "<group>"; };
+		D31897081B55B09B00A60725 /* CPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPConstants.h; sourceTree = "<group>"; };
+		D31897091B55B09B00A60725 /* CPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPConstants.m; sourceTree = "<group>"; };
+		D318970A1B55B09B00A60725 /* CPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogger.h; sourceTree = "<group>"; };
+		D318970B1B55B09B00A60725 /* CPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUtils.h; sourceTree = "<group>"; };
+		D318970C1B55B09B00A60725 /* CPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUtils.m; sourceTree = "<group>"; };
+		D318970E1B55B09B00A60725 /* CPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPExtensions.h; sourceTree = "<group>"; };
+		D318970F1B55B09B00A60725 /* CPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLabel.h; sourceTree = "<group>"; };
+		D31897101B55B09B00A60725 /* CPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLabel.m; sourceTree = "<group>"; };
+		D31897121B55B09B00A60725 /* CPRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRequestHandler.h; sourceTree = "<group>"; };
+		D31897131B55B09B00A60725 /* CPRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRequestHandler.m; sourceTree = "<group>"; };
+		FD83E3DEFC4ECAB8925D90E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D31896D31B55B07A00A60725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D559891A6EA41305ECDC68 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31896EC1B55B07A00A60725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B7B3009E4CD991A67352EF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FF03C576A8281052ACD1522 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90A770017EADE97938193D23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD83E3DEFC4ECAB8925D90E8 /* Pods.debug.xcconfig */,
+				CFB1F58192F7B7D4585E4D9E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D31896CD1B55B07A00A60725 = {
+			isa = PBXGroup;
+			children = (
+				D31896FF1B55B09B00A60725 /* CoPylot */,
+				D31896D81B55B07A00A60725 /* CoPylot-Example */,
+				D31896F21B55B07A00A60725 /* CoPylot-ExampleTests */,
+				D31896D71B55B07A00A60725 /* Products */,
+				90A770017EADE97938193D23 /* Pods */,
+				3B7B3009E4CD991A67352EF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D31896D71B55B07A00A60725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D31896D61B55B07A00A60725 /* CoPylot-Example.app */,
+				D31896EF1B55B07A00A60725 /* CoPylot-ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D31896D81B55B07A00A60725 /* CoPylot-Example */ = {
+			isa = PBXGroup;
+			children = (
+				D31896DD1B55B07A00A60725 /* AppDelegate.h */,
+				D31896DE1B55B07A00A60725 /* AppDelegate.m */,
+				D31896E01B55B07A00A60725 /* ViewController.h */,
+				D31896E11B55B07A00A60725 /* ViewController.m */,
+				D31896E31B55B07A00A60725 /* Main.storyboard */,
+				D31896E61B55B07A00A60725 /* Images.xcassets */,
+				D31896E81B55B07A00A60725 /* LaunchScreen.xib */,
+				D31896D91B55B07A00A60725 /* Supporting Files */,
+			);
+			path = "CoPylot-Example";
+			sourceTree = "<group>";
+		};
+		D31896D91B55B07A00A60725 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D31896DA1B55B07A00A60725 /* Info.plist */,
+				D31896DB1B55B07A00A60725 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D31896F21B55B07A00A60725 /* CoPylot-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D31896F51B55B07A00A60725 /* CoPylot_ExampleTests.m */,
+				D31896F31B55B07A00A60725 /* Supporting Files */,
+			);
+			path = "CoPylot-ExampleTests";
+			sourceTree = "<group>";
+		};
+		D31896F31B55B07A00A60725 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D31896F41B55B07A00A60725 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D31896FF1B55B09B00A60725 /* CoPylot */ = {
+			isa = PBXGroup;
+			children = (
+				D31897051B55B09B00A60725 /* CoPylot.h */,
+				D31897061B55B09B00A60725 /* CoPylot.m */,
+				D31897001B55B09B00A60725 /* Block */,
+				D31897071B55B09B00A60725 /* Core */,
+				D318970D1B55B09B00A60725 /* Extensions */,
+				D31897111B55B09B00A60725 /* Networking */,
+			);
+			name = CoPylot;
+			path = ../CoPylot;
+			sourceTree = "<group>";
+		};
+		D31897001B55B09B00A60725 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				D31897011B55B09B00A60725 /* CPBlock.h */,
+				D31897021B55B09B00A60725 /* CPBlock.m */,
+				D31897031B55B09B00A60725 /* CPBlockValue.h */,
+				D31897041B55B09B00A60725 /* CPBlockValue.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		D31897071B55B09B00A60725 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D31897081B55B09B00A60725 /* CPConstants.h */,
+				D31897091B55B09B00A60725 /* CPConstants.m */,
+				D318970A1B55B09B00A60725 /* CPLogger.h */,
+				D318970B1B55B09B00A60725 /* CPUtils.h */,
+				D318970C1B55B09B00A60725 /* CPUtils.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D318970D1B55B09B00A60725 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D318970E1B55B09B00A60725 /* CPExtensions.h */,
+				D318970F1B55B09B00A60725 /* CPLabel.h */,
+				D31897101B55B09B00A60725 /* CPLabel.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D31897111B55B09B00A60725 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D31897121B55B09B00A60725 /* CPRequestHandler.h */,
+				D31897131B55B09B00A60725 /* CPRequestHandler.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D31896D51B55B07A00A60725 /* CoPylot-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31896F91B55B07A00A60725 /* Build configuration list for PBXNativeTarget "CoPylot-Example" */;
+			buildPhases = (
+				215DE0243A57FE6DDFAE2079 /* Check Pods Manifest.lock */,
+				D31896D21B55B07A00A60725 /* Sources */,
+				D31896D31B55B07A00A60725 /* Frameworks */,
+				D31896D41B55B07A00A60725 /* Resources */,
+				3C3556093AEE96BF904B6DE5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoPylot-Example";
+			productName = "CoPylot-Example";
+			productReference = D31896D61B55B07A00A60725 /* CoPylot-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D31896EE1B55B07A00A60725 /* CoPylot-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31896FC1B55B07A00A60725 /* Build configuration list for PBXNativeTarget "CoPylot-ExampleTests" */;
+			buildPhases = (
+				D31896EB1B55B07A00A60725 /* Sources */,
+				D31896EC1B55B07A00A60725 /* Frameworks */,
+				D31896ED1B55B07A00A60725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31896F11B55B07A00A60725 /* PBXTargetDependency */,
+			);
+			name = "CoPylot-ExampleTests";
+			productName = "CoPylot-ExampleTests";
+			productReference = D31896EF1B55B07A00A60725 /* CoPylot-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D31896CE1B55B07A00A60725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Brian Vallelunga";
+				TargetAttributes = {
+					D31896D51B55B07A00A60725 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D31896EE1B55B07A00A60725 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D31896D51B55B07A00A60725;
+					};
+				};
+			};
+			buildConfigurationList = D31896D11B55B07A00A60725 /* Build configuration list for PBXProject "CoPylot-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D31896CD1B55B07A00A60725;
+			productRefGroup = D31896D71B55B07A00A60725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D31896D51B55B07A00A60725 /* CoPylot-Example */,
+				D31896EE1B55B07A00A60725 /* CoPylot-ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D31896D41B55B07A00A60725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31896E51B55B07A00A60725 /* Main.storyboard in Resources */,
+				D31896EA1B55B07A00A60725 /* LaunchScreen.xib in Resources */,
+				D31896E71B55B07A00A60725 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31896ED1B55B07A00A60725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		215DE0243A57FE6DDFAE2079 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C3556093AEE96BF904B6DE5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D31896D21B55B07A00A60725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31897181B55B09B00A60725 /* CPUtils.m in Sources */,
+				D31896E21B55B07A00A60725 /* ViewController.m in Sources */,
+				D31896DF1B55B07A00A60725 /* AppDelegate.m in Sources */,
+				D31897151B55B09B00A60725 /* CPBlockValue.m in Sources */,
+				D31897141B55B09B00A60725 /* CPBlock.m in Sources */,
+				D318971A1B55B09B00A60725 /* CPRequestHandler.m in Sources */,
+				D31897191B55B09B00A60725 /* CPLabel.m in Sources */,
+				D31897161B55B09B00A60725 /* CoPylot.m in Sources */,
+				D31896DC1B55B07A00A60725 /* main.m in Sources */,
+				D31897171B55B09B00A60725 /* CPConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31896EB1B55B07A00A60725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31896F61B55B07A00A60725 /* CoPylot_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D31896F11B55B07A00A60725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D31896D51B55B07A00A60725 /* CoPylot-Example */;
+			targetProxy = D31896F01B55B07A00A60725 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D31896E31B55B07A00A60725 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31896E41B55B07A00A60725 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D31896E81B55B07A00A60725 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31896E91B55B07A00A60725 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D31896F71B55B07A00A60725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D31896F81B55B07A00A60725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D31896FA1B55B07A00A60725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD83E3DEFC4ECAB8925D90E8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CoPylot-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D31896FB1B55B07A00A60725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB1F58192F7B7D4585E4D9E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CoPylot-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D31896FD1B55B07A00A60725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoPylot-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoPylot-Example.app/CoPylot-Example";
+			};
+			name = Debug;
+		};
+		D31896FE1B55B07A00A60725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoPylot-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoPylot-Example.app/CoPylot-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D31896D11B55B07A00A60725 /* Build configuration list for PBXProject "CoPylot-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31896F71B55B07A00A60725 /* Debug */,
+				D31896F81B55B07A00A60725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31896F91B55B07A00A60725 /* Build configuration list for PBXNativeTarget "CoPylot-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31896FA1B55B07A00A60725 /* Debug */,
+				D31896FB1B55B07A00A60725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31896FC1B55B07A00A60725 /* Build configuration list for PBXNativeTarget "CoPylot-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31896FD1B55B07A00A60725 /* Debug */,
+				D31896FE1B55B07A00A60725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D31896CE1B55B07A00A60725 /* Project object */;
+}
