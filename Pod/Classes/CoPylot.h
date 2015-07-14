@@ -6,8 +6,12 @@
 //
 //
 
-#ifndef Pods_CoPylot_h
-#define Pods_CoPylot_h
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
+@interface CoPylot : NSObject
 
-#endif
++ (CoPylot *)sharedInstanceWithAppID:(NSString *)appID andSecret:(NSString *)secret;
++ (instancetype)sharedInstance;
+
+@end
