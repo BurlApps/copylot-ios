@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#import "CPBlock.h"
+#import "CPUtils.h"
 #import "CPLogger.h"
 #import "CPRequestHandler.h"
-#import "CPUtils.h"
 
 @interface CoPylot : NSObject
 
@@ -23,6 +24,11 @@
 @property (nonatomic, copy) NSString *appSecret;
 @property (nonatomic, copy) NSString *appInstallation;
 
+#pragma mark Core Utilities
 @property (nonatomic, strong) CPRequestHandler *requestHandler;
+
+
+#pragma mark Block Tracking
+@property (nonatomic, copy) NSMutableDictionary *blocks;
 
 @end
