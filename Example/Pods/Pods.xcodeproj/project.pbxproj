@@ -110,6 +110,19 @@
 		D325A55E9E2C65DE5616B258 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE2520352A82608E371E5D /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D36A07CC1B54BD9400FF7366 /* CoPylot.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07CA1B54BD9400FF7366 /* CoPylot.h */; };
 		D36A07CD1B54BD9400FF7366 /* CoPylot.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07CB1B54BD9400FF7366 /* CoPylot.m */; };
+		D36A07D01B55845500FF7366 /* CPConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07CE1B55845500FF7366 /* CPConstants.h */; };
+		D36A07D11B55845500FF7366 /* CPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07CF1B55845500FF7366 /* CPConstants.m */; };
+		D36A07D41B558BA400FF7366 /* CPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07D21B558BA400FF7366 /* CPLogger.h */; };
+		D36A07E41B558EA100FF7366 /* CPRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07E21B558EA100FF7366 /* CPRequestHandler.h */; };
+		D36A07E51B558EA100FF7366 /* CPRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07E31B558EA100FF7366 /* CPRequestHandler.m */; };
+		D36A07E81B558EC800FF7366 /* CPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07E61B558EC800FF7366 /* CPUtils.h */; };
+		D36A07E91B558EC800FF7366 /* CPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07E71B558EC800FF7366 /* CPUtils.m */; };
+		D36A07ED1B558F3300FF7366 /* CPBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07EB1B558F3300FF7366 /* CPBlock.h */; };
+		D36A07EE1B558F3300FF7366 /* CPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07EC1B558F3300FF7366 /* CPBlock.m */; };
+		D36A07F61B558F6E00FF7366 /* CPBlockValue.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07F41B558F6E00FF7366 /* CPBlockValue.h */; };
+		D36A07F71B558F6E00FF7366 /* CPBlockValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07F51B558F6E00FF7366 /* CPBlockValue.m */; };
+		D36A07FA1B558FB200FF7366 /* CPLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A07F81B558FB200FF7366 /* CPLabel.h */; };
+		D36A07FB1B558FB200FF7366 /* CPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A07F91B558FB200FF7366 /* CPLabel.m */; };
 		DE7CF848743DFABB306203CD /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A82BF2ED94FEDB846095F71 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF48DF2FEA26366EF9348B21 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A36D5E9272E1046DC5C4795D /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E18DE3C3405D6B5DEC8AD99C /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD2FED491CF918BB837FA2 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -307,6 +320,19 @@
 		D1DB5757D8DB8B2884220C1A /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
 		D36A07CA1B54BD9400FF7366 /* CoPylot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoPylot.h; sourceTree = "<group>"; };
 		D36A07CB1B54BD9400FF7366 /* CoPylot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoPylot.m; sourceTree = "<group>"; };
+		D36A07CE1B55845500FF7366 /* CPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPConstants.h; sourceTree = "<group>"; };
+		D36A07CF1B55845500FF7366 /* CPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPConstants.m; sourceTree = "<group>"; };
+		D36A07D21B558BA400FF7366 /* CPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogger.h; sourceTree = "<group>"; };
+		D36A07E21B558EA100FF7366 /* CPRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRequestHandler.h; sourceTree = "<group>"; };
+		D36A07E31B558EA100FF7366 /* CPRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRequestHandler.m; sourceTree = "<group>"; };
+		D36A07E61B558EC800FF7366 /* CPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUtils.h; sourceTree = "<group>"; };
+		D36A07E71B558EC800FF7366 /* CPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUtils.m; sourceTree = "<group>"; };
+		D36A07EB1B558F3300FF7366 /* CPBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlock.h; sourceTree = "<group>"; };
+		D36A07EC1B558F3300FF7366 /* CPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlock.m; sourceTree = "<group>"; };
+		D36A07F41B558F6E00FF7366 /* CPBlockValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlockValue.h; sourceTree = "<group>"; };
+		D36A07F51B558F6E00FF7366 /* CPBlockValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlockValue.m; sourceTree = "<group>"; };
+		D36A07F81B558FB200FF7366 /* CPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLabel.h; sourceTree = "<group>"; };
+		D36A07F91B558FB200FF7366 /* CPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLabel.m; sourceTree = "<group>"; };
 		D5CB78D75E00CE895C755BA7 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
 		D724C90C51ECB4C8183AB182 /* Pods-CoPylot_Example-CoPylot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Example-CoPylot-umbrella.h"; sourceTree = "<group>"; };
 		D8CB15C8187E1B1C5C3A8972 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
@@ -570,6 +596,11 @@
 		4B8D2A279C322032E3DF44F1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D36A07F31B558F4900FF7366 /* Extensions */,
+				D36A07EA1B558F2300FF7366 /* Blocks */,
+				D36A07D81B558C5900FF7366 /* Networking */,
+				D36A07D61B558C2B00FF7366 /* Logger */,
+				D36A07DD1B558CAF00FF7366 /* Core */,
 				D36A07CA1B54BD9400FF7366 /* CoPylot.h */,
 				D36A07CB1B54BD9400FF7366 /* CoPylot.m */,
 			);
@@ -699,6 +730,54 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		D36A07D61B558C2B00FF7366 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				D36A07D21B558BA400FF7366 /* CPLogger.h */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		D36A07D81B558C5900FF7366 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D36A07E21B558EA100FF7366 /* CPRequestHandler.h */,
+				D36A07E31B558EA100FF7366 /* CPRequestHandler.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D36A07DD1B558CAF00FF7366 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D36A07CE1B55845500FF7366 /* CPConstants.h */,
+				D36A07CF1B55845500FF7366 /* CPConstants.m */,
+				D36A07E61B558EC800FF7366 /* CPUtils.h */,
+				D36A07E71B558EC800FF7366 /* CPUtils.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D36A07EA1B558F2300FF7366 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				D36A07EB1B558F3300FF7366 /* CPBlock.h */,
+				D36A07EC1B558F3300FF7366 /* CPBlock.m */,
+				D36A07F41B558F6E00FF7366 /* CPBlockValue.h */,
+				D36A07F51B558F6E00FF7366 /* CPBlockValue.m */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		D36A07F31B558F4900FF7366 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D36A07F81B558FB200FF7366 /* CPLabel.h */,
+				D36A07F91B558FB200FF7366 /* CPLabel.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		E10318DD4EEFCE41C813B289 /* CoPylot */ = {
 			isa = PBXGroup;
 			children = (
@@ -787,8 +866,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36A07E41B558EA100FF7366 /* CPRequestHandler.h in Headers */,
+				D36A07D01B55845500FF7366 /* CPConstants.h in Headers */,
 				688815D937908D7A953EE290 /* Pods-CoPylot_Example-umbrella.h in Headers */,
 				D36A07CC1B54BD9400FF7366 /* CoPylot.h in Headers */,
+				D36A07D41B558BA400FF7366 /* CPLogger.h in Headers */,
+				D36A07FA1B558FB200FF7366 /* CPLabel.h in Headers */,
+				D36A07E81B558EC800FF7366 /* CPUtils.h in Headers */,
+				D36A07ED1B558F3300FF7366 /* CPBlock.h in Headers */,
+				D36A07F61B558F6E00FF7366 /* CPBlockValue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,8 +1125,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36A07D11B55845500FF7366 /* CPConstants.m in Sources */,
+				D36A07E91B558EC800FF7366 /* CPUtils.m in Sources */,
+				D36A07EE1B558F3300FF7366 /* CPBlock.m in Sources */,
 				D36A07CD1B54BD9400FF7366 /* CoPylot.m in Sources */,
 				1F5BC87313BD5791147AB82A /* Pods-CoPylot_Example-dummy.m in Sources */,
+				D36A07E51B558EA100FF7366 /* CPRequestHandler.m in Sources */,
+				D36A07F71B558F6E00FF7366 /* CPBlockValue.m in Sources */,
+				D36A07FB1B558FB200FF7366 /* CPLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
