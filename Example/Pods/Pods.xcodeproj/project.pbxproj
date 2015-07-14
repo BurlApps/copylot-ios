@@ -24,7 +24,6 @@
 		25AA4FCEAADC38E190158E31 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6731AEF7C811370DF3A8605B /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2712550DB8B93C673A43EB83 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7CF8139510165C71C8B945 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		27948A64222F7D257E8A1A06 /* CoPylot.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EFC721B2FE00CF6DBAB3F46F /* CoPylot.bundle */; };
-		2988F7F3A2F9F6C7E0654AB8 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */; };
 		2992B6D879F6F78FB1B59744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
 		2D58A6988C442A4173FF2D85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D6CC1FC0D99BC228494E82 /* XCTest.framework */; };
 		2E78D33477A7DAED2B6AAC60 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB7BF1F2F656866D9DF4F2F /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,7 +108,6 @@
 		D0BA2DF4F7EB0D8DA2331F52 /* Pods-CoPylot_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBACF70DE1DA7445F3FC02D /* Pods-CoPylot_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1DA2149822BB901CAD1B764 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = F1DA5BC1C9774555D2F5313F /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D325A55E9E2C65DE5616B258 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE2520352A82608E371E5D /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D93196255E2950332D922D18 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */; };
 		DE7CF848743DFABB306203CD /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A82BF2ED94FEDB846095F71 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF48DF2FEA26366EF9348B21 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A36D5E9272E1046DC5C4795D /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E18DE3C3405D6B5DEC8AD99C /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD2FED491CF918BB837FA2 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -303,9 +301,9 @@
 		C75857036B460F8B6C5376D8 /* Pods-CoPylot_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C89D0A845FBB073DE0C5F712 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
 		C92BF1DF669ECB8FB0C42494 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
-		CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		CC63B3CEA80F1093F91BFBF1 /* Pods-CoPylot_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D1DB5757D8DB8B2884220C1A /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		D31B42951B54B6380010E9FA /* CoPylot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoPylot.h; sourceTree = "<group>"; };
 		D5CB78D75E00CE895C755BA7 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
 		D724C90C51ECB4C8183AB182 /* Pods-CoPylot_Example-CoPylot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Example-CoPylot-umbrella.h"; sourceTree = "<group>"; };
 		D8CB15C8187E1B1C5C3A8972 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
@@ -569,7 +567,7 @@
 		4B8D2A279C322032E3DF44F1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */,
+				D31B42951B54B6380010E9FA /* CoPylot.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1095,7 +1093,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E0E9621CDF26D5A3CC73E4 /* Pods-CoPylot_Example-CoPylot-dummy.m in Sources */,
-				D93196255E2950332D922D18 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1104,7 +1101,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE447425FDF6EEC9DC69A999 /* Pods-CoPylot_Tests-CoPylot-dummy.m in Sources */,
-				2988F7F3A2F9F6C7E0654AB8 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
