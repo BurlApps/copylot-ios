@@ -1,0 +1,25 @@
+{
+  "name": "CoPylot",
+  "version": "0.1.0",
+  "summary": "A short description of CoPylot.",
+  "description": "                       An optional longer description of CoPylot\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CoPylot",
+  "license": "MIT",
+  "authors": {
+    "Brian Vallelunga": "vallelungabrian@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CoPylot.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "CoPylot": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,1722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F1E56F0566397C8ECF20AC /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 05021312E50E250FB7D3F9BD /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085F6C4C83550A28E9FF49A2 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C84EFBA6F2B2CA959D16EE /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0BA31C62A1101C9AD4B391AE /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = BC435930F485E40DDF789312 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102BFC377E3A878FA93BC607 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A460FBEA4A398A382E5116 /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		137E1BB07B4712860400E052 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 751ABB4C158FAEAA8F773A59 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		141804C4DEDC35A018EB5FD4 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = E37D4EFC5EFEB3AB78F24848 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1594DD568AF3831978669CDD /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9628ED2ECC2AC39B5DA94F /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15C51BC0D09F1D002788AC48 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 134A7BF15F9C20F66F57EFDB /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CEA5A810D53505AAF46020F /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F9953D0B1BA78342BBFB5FA8 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D28BF7C8C9FF033D0DDDD05 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FF365CBD9717D5148695D1 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EA36CBFF58473339BE6C4B8 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F8C28CA7F297C6B865993D /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F5BC87313BD5791147AB82A /* Pods-CoPylot_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 100E424AC21319F4C2621B13 /* Pods-CoPylot_Example-dummy.m */; };
+		1FE7D8CF73B47BCDA62FBC2F /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A166A966D33B06D5F521610 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F68649987851DA6A462641 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C51D407F45EBD4BAE3CAEB22 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25AA4FCEAADC38E190158E31 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6731AEF7C811370DF3A8605B /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2712550DB8B93C673A43EB83 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7CF8139510165C71C8B945 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27948A64222F7D257E8A1A06 /* CoPylot.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EFC721B2FE00CF6DBAB3F46F /* CoPylot.bundle */; };
+		2988F7F3A2F9F6C7E0654AB8 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */; };
+		2992B6D879F6F78FB1B59744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
+		2D58A6988C442A4173FF2D85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D6CC1FC0D99BC228494E82 /* XCTest.framework */; };
+		2E78D33477A7DAED2B6AAC60 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB7BF1F2F656866D9DF4F2F /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34378D09B3E82356ED2AE754 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D6CC1FC0D99BC228494E82 /* XCTest.framework */; };
+		363CCCFDBD0122C5685C6064 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAD57765CC519B01310E4A7 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3B5EBC769664B1BE72B2A604 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9909730D0A28FBB25404FC77 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D25E6011A9593F5769BCECB /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5626377D0F0F51B7EB94AA /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D453137827BCC4D28BB1CF4 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD8715CF561DE94B6B61B8E /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D63D4F3B775378A7D31E135 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F16A6059F1B5E6CF75F41E3 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3FBCC4341285BEDE2DE2DE21 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 770FDE272BE4AD483EBD9341 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		41F55D4655542F665B850F90 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8FA2E11BFA51664C8C9C34 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41F9D2FDBA8F3D6D2FF93996 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A539448E2E588FAD565F18 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		443DAB0777DE058147B316BE /* CoPylot.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A12F9A1AC749EB7EE821F /* CoPylot.bundle */; };
+		4478A055E2BA9DF2DED1C4C9 /* Pods-CoPylot_Example-CoPylot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D724C90C51ECB4C8183AB182 /* Pods-CoPylot_Example-CoPylot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48CE409E12132F33B8E0E8FC /* Pods-CoPylot_Tests-CoPylot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 622D9295D70CF04BEBA5CC29 /* Pods-CoPylot_Tests-CoPylot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48F0FA768B5A5BA17C7935A9 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = C66E9DE0CAABF6864A191898 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BA46FB71239B5905E6A94EA /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1BAB77DB34EA007381EBD6 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E56CA277AEFEAC6111E70F9 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 20544271D743B394BEE5D6D6 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FC4D05D35E9EA9CCA2A4A6E /* Pods-CoPylot_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B17BE8C47B412B6C982496 /* Pods-CoPylot_Tests-Expecta-dummy.m */; };
+		52DBB097031AC4AE1EF5670D /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 482EF18707F1D77A63F47D06 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		538FEFE329F01990F6058095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
+		557FC0948B41B10ED04A9355 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CB78D75E00CE895C755BA7 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		566C30F1D3D05A376B991E92 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0F2C75A92FD1566036AAFE /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57211B2EB24981D044E668C5 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ACA447356991A6E5D84DC7 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5892FFA5EB3ED98CE333E842 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FC00B8E82CBBE8D61B1A07DC /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		58F9CF8A6857D3B25E9B309D /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 03294416BBE4EFD778D4282D /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DD229BA3DD868413857B1D6 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6E284DC645DA7C61BD6D65 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F1C64A544CD9191C468B7C2 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B20654C58FE7E99741DD888 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		612455D788D3C46147067977 /* Pods-CoPylot_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E0CBD62CE5AFFCC10BE385 /* Pods-CoPylot_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F2874B9282A6DA1AB21827 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE87C6665DC98D5A73111B /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6330FA59B2465F1ACABE9F2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
+		65F84BBF2DAB46079A5EB1E6 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = C92BF1DF669ECB8FB0C42494 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		666093C3C3E545CB73969094 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CB15C8187E1B1C5C3A8972 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6703460DBF696FE0D3D57A97 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED219E314DE4058A751FBC /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		688815D937908D7A953EE290 /* Pods-CoPylot_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B88B060D6BBB4730AE4421E /* Pods-CoPylot_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69D5FB74F4BC591C7BD54DF6 /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF652F7CACFC5D7796BEB3B /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6AD500BCEEB3CA94259AE93E /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 094B9F3CF5CC3E7D3796626C /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6B0C1AE319C8798A2B5E795E /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D591F36A8114597E0F36B /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6B327D2F28B2BE3C788F7E8E /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 4743DF0EE0243429B04A5EF2 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B854623B5022AC4C49292FE /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F6DF648BB395B60C4BF834 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C848C9052E8384C22A5DDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
+		6D06303DA142E783F008F3CE /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = B42F734430217E6BA03758B7 /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F27C7638F595B419B4CDCAF /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B8A1DF550D83111F078224 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		72F20F8E7D0624B637ED23CE /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 951AE4C18C6A175CFFEE9721 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		735CBC6734BEA51FF24EF2CF /* Pods-CoPylot_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3966AE2CAD3EEAC77789E9DA /* Pods-CoPylot_Tests-Specta-dummy.m */; };
+		74E0E9621CDF26D5A3CC73E4 /* Pods-CoPylot_Example-CoPylot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E5E40755C57028210F1521 /* Pods-CoPylot_Example-CoPylot-dummy.m */; };
+		772C7E513D65140CFE5E684D /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CCE91819B6C28D433AE0F7 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78BA9DED70B48C1E51608891 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C26C0DD7EFE532801273C56 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79341B54AE457E60EA718DF4 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D70B78DCD41EEF19CE8807 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797B7C4C7F9F76FAF1F5299D /* Pods-CoPylot_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 336EF2E491B01AEE56099772 /* Pods-CoPylot_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E03C6315ECB4A901ECF12B7 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80C834EB6740149B52009A /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81D3BDECB4057492943BCE8B /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C8E93D3F043B38B390C30F /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8690656390947CBBC05B2D21 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0F782170CD0B5C4949C689 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87C62A02C77FB7574F85AAE8 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E1FE0863C66C4FB0BBFE24 /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		887FD61735369951F9795614 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = FFECC56134E92E53CACD21B4 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D1321EE357B7444E67FAD4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
+		8DDA56A1AAAF69778CEA9DD8 /* Pods-CoPylot_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C43B20E07B89600B32077 /* Pods-CoPylot_Tests-dummy.m */; };
+		8E9D20EF0025DC8E42F15290 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A89E218A211E0E5F056F80B /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		957B24495030D25C6A4D0018 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B979D008CB1AE4631FB467DB /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9985B7F53C5CEAE28C1DE2AF /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521775EF0B26E2E5F838912 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FA74ECDFBA1F5E88848265B /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA1C5653954AF9774B67961 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A207143E84A2F4B3907B644E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C5CEEBFC9A78A67B11772 /* Foundation.framework */; };
+		A210372EC583616BAD4262AF /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8FFC808EDDA343255107F0 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2DF9EDCDD36AA75CCE6A98B /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4453E99226935B112000000 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AC5C6C7B25DB420EE74A6C9E /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E2E90D0B4C966593B742C /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE9CA8288EAAB86FF9BDECE4 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DB5757D8DB8B2884220C1A /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0E8BAC7933EF2E246728A14 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C493E236A170C71ECF7D29D /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BAC337943EA9A4ACB4CD675F /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCFF94C5F4DB7408F5BEEA /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC9B9B0904D6957F6325C28B /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9089EAB0A03EF68B279CC3A4 /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE447425FDF6EEC9DC69A999 /* Pods-CoPylot_Tests-CoPylot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3CE539974363B28204D2A6 /* Pods-CoPylot_Tests-CoPylot-dummy.m */; };
+		BFB75AC2A543D67BD5E41F34 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D3DE52E0EF3DC0AAB83EFB /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0AA1A688DBFECBBECF4026F /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4D064190A03012EC9EF83A /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2FD003E5CAD8010E4DC9B2E /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B87F4C44EC8AAAAED4716039 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4FEDE46649ED21E8F9FBC13 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 38093F07F080B0F1A321680F /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C60028B1309B8EEBBB0FF77A /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D988F3BB4B3B3A2F053D4B /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C60153ED8FC2DAC5FA32CA45 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1309F32118C560ACF25231 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C88575039D433F0A66645A31 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BAF19EE8160D0C1C70652C /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8C82539350B83FD8EFF0B43 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E4EF502C2D90B9ED4D819F /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8DF06BC383FD6D98A9BB3B8 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = 569C8DC05EA0369F6A1D721E /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBD95993361B99631BEBE618 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C29D1507A99B8223A6A1D6B /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDE038DD6AAF2971E5C79344 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F021FC7777018CE553A0315D /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D0BA2DF4F7EB0D8DA2331F52 /* Pods-CoPylot_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBACF70DE1DA7445F3FC02D /* Pods-CoPylot_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1DA2149822BB901CAD1B764 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = F1DA5BC1C9774555D2F5313F /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D325A55E9E2C65DE5616B258 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DADE2520352A82608E371E5D /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D93196255E2950332D922D18 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */; };
+		DE7CF848743DFABB306203CD /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A82BF2ED94FEDB846095F71 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF48DF2FEA26366EF9348B21 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A36D5E9272E1046DC5C4795D /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E18DE3C3405D6B5DEC8AD99C /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD2FED491CF918BB837FA2 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E40D678AE59897141459D9E2 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1135ED34B83A936361A25699 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9B5DE42408B259947D97BEA /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 691BD0761BFEA411F1DE3FCD /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EB198166CF40DB0C2483BD71 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0E413E7445922C25FE561F /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBBB37B14A69934B9E154EF7 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFAB09C189047E6900A7ACD /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EDBB1E304D7F14EBBCDC7BCD /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5348F6BEF31A5EE523F91 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EE0B7EA00554A12FA6CE3AE4 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7BE4558133E5A8CEA5DF1C /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE8B1B08E4A15EC024CA17A3 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = DB942FD0C039DBC56FAD11CC /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F511E9A61FDE4EBA60207BEF /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = C89D0A845FBB073DE0C5F712 /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F55F6498391FC89BE70BEEC8 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = B149D0B6150E7D8691A83046 /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5A9807CA67D90F0C25501ED /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DC254FFFBFB348EFB835F057 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F619F73205A109F5342C1048 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = DC86916025525E99801DCDB8 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81B648BB1E862741A9EA5A6 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1D8EF94D9C44BF6B8BF1A3 /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F906EC10045EA1F4F1263150 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F7ABECF5E286F5D062F209 /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F92FC138E24426CC15CCE1DE /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = DA863C6D28D578501BD6EF02 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC06802C635CE5894C31D4B9 /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA0E27801C974A36FFAB236 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD9335EB206790596F254694 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CC9CFB11D040CB30C659AD /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3879F33CEC34139400E9AA00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20DE62B1E77395038BB710F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78EA304F0A2A1E0F4B64570C;
+			remoteInfo = "Pods-CoPylot_Tests-Expecta";
+		};
+		59B1BA04E4AE9A4A77730FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20DE62B1E77395038BB710F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E3D0711C8412D5AAD34EC38;
+			remoteInfo = "Pods-CoPylot_Tests-CoPylot-CoPylot";
+		};
+		8175B6B9F52B56C693C32A3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20DE62B1E77395038BB710F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E2C7E4EDEABFCFFED162ED;
+			remoteInfo = "Pods-CoPylot_Tests-CoPylot";
+		};
+		A3646E0416A7F1F2CB3A1173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20DE62B1E77395038BB710F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D280C82270D066A4531EC639;
+			remoteInfo = "Pods-CoPylot_Example-CoPylot-CoPylot";
+		};
+		C56F12FF1213A620544905D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20DE62B1E77395038BB710F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4AB626286AE8BC9E28F65E;
+			remoteInfo = "Pods-CoPylot_Example-CoPylot";
+		};
+		FA1405CBEC62B46AB430C168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20DE62B1E77395038BB710F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3A19BEAD9CEB0F258FBBABE;
+			remoteInfo = "Pods-CoPylot_Tests-Specta";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03294416BBE4EFD778D4282D /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		040D591F36A8114597E0F36B /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		05021312E50E250FB7D3F9BD /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		07E2721844AB3A3CE12C411B /* Pods-CoPylot_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoPylot_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		094B9F3CF5CC3E7D3796626C /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		09F7ABECF5E286F5D062F209 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		0A0E413E7445922C25FE561F /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		0C2464C8DDA31920AD41A12C /* Pods-CoPylot_Tests-CoPylot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CoPylot_Tests-CoPylot-prefix.pch"; path = "../Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot-prefix.pch"; sourceTree = "<group>"; };
+		0C2FA57F241F19ABC9B6783F /* Pods-CoPylot_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoPylot_Example-resources.sh"; sourceTree = "<group>"; };
+		0C80C834EB6740149B52009A /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		100E424AC21319F4C2621B13 /* Pods-CoPylot_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoPylot_Example-dummy.m"; sourceTree = "<group>"; };
+		1135ED34B83A936361A25699 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		134A7BF15F9C20F66F57EFDB /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		1521775EF0B26E2E5F838912 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		16ACA447356991A6E5D84DC7 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		1A4B76C8EE7E330BA7DC21A2 /* CoPylot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoPylot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8FFC808EDDA343255107F0 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		20544271D743B394BEE5D6D6 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		2523C90F2D09A0EA83AD8294 /* Pods-CoPylot_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoPylot_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		269717D377CF1D396DFB6CD4 /* Pods-CoPylot_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		26D6CC1FC0D99BC228494E82 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2761EFA77438B86DB795C244 /* Pods-CoPylot_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoPylot_Example.modulemap"; sourceTree = "<group>"; };
+		2938048D1FAD1A65C7DFE88C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29524DEEC4056A262A825742 /* Pods-CoPylot_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		2AE9FAC8A3F848DE2EA51B7A /* Pods-CoPylot_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		2C1D8EF94D9C44BF6B8BF1A3 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		2CA6BA36CA740C91EA104D26 /* CoPylot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoPylot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E765EB5C773232DD60A06FE /* Pods-CoPylot_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoPylot_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		317C5CEEBFC9A78A67B11772 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		336EF2E491B01AEE56099772 /* Pods-CoPylot_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
+		33F6DF648BB395B60C4BF834 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		36DC09FE5C1C3018A2923C88 /* Pods_CoPylot_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoPylot_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38093F07F080B0F1A321680F /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		3966AE2CAD3EEAC77789E9DA /* Pods-CoPylot_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoPylot_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		39FF365CBD9717D5148695D1 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		3A5626377D0F0F51B7EB94AA /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		3AF652F7CACFC5D7796BEB3B /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		3B88B060D6BBB4730AE4421E /* Pods-CoPylot_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Example-umbrella.h"; sourceTree = "<group>"; };
+		3C26C0DD7EFE532801273C56 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		3DCE87C6665DC98D5A73111B /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		3E6A12F9A1AC749EB7EE821F /* CoPylot.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoPylot.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		401534675AAF2551AD8ECAAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41CB88524BD340AD3C643254 /* Pods-CoPylot_Tests-CoPylot-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Tests-CoPylot-Private.xcconfig"; path = "../Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot-Private.xcconfig"; sourceTree = "<group>"; };
+		43E43003180171EDBA6C7E9B /* Pods-CoPylot_Example-CoPylot-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Example-CoPylot-Private.xcconfig"; sourceTree = "<group>"; };
+		46D64329536D8562881A3575 /* Pods-CoPylot_Tests-CoPylot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Tests-CoPylot.xcconfig"; path = "../Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot.xcconfig"; sourceTree = "<group>"; };
+		4743DF0EE0243429B04A5EF2 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		47D05FA5EA9EBA0398D7DD16 /* Pods_CoPylot_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoPylot_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		482EF18707F1D77A63F47D06 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		4AED219E314DE4058A751FBC /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		4B6E284DC645DA7C61BD6D65 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		4C1BAB77DB34EA007381EBD6 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		4C3C43B20E07B89600B32077 /* Pods-CoPylot_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoPylot_Tests-dummy.m"; sourceTree = "<group>"; };
+		4DBACF70DE1DA7445F3FC02D /* Pods-CoPylot_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4E5B31703110842E2446722E /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C2552DDCC336596D3B993A /* Pods-CoPylot_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoPylot_Tests-resources.sh"; sourceTree = "<group>"; };
+		52F8C28CA7F297C6B865993D /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		53CB23BBCEFB92E31C3068C7 /* Pods-CoPylot_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		54FE2EA6597E93C3B56D4BE0 /* Pods-CoPylot_Example-CoPylot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoPylot_Example-CoPylot.modulemap"; sourceTree = "<group>"; };
+		569C8DC05EA0369F6A1D721E /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		58A539448E2E588FAD565F18 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		58E1FE0863C66C4FB0BBFE24 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		5A4D064190A03012EC9EF83A /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		5A82BF2ED94FEDB846095F71 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		5B9628ED2ECC2AC39B5DA94F /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		5E0F782170CD0B5C4949C689 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		5FEED6BE288068DC4BD9F01B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		622D9295D70CF04BEBA5CC29 /* Pods-CoPylot_Tests-CoPylot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CoPylot_Tests-CoPylot-umbrella.h"; path = "../Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot-umbrella.h"; sourceTree = "<group>"; };
+		62E4EF502C2D90B9ED4D819F /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		6731AEF7C811370DF3A8605B /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		686E03DD13DD0FACDC95A1FE /* Pods-CoPylot_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoPylot_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
+		691BD0761BFEA411F1DE3FCD /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		6A166A966D33B06D5F521610 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		6C216C5E0AE02F5CD9EC139F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-CoPylot_Tests-CoPylot/Info.plist"; sourceTree = "<group>"; };
+		70B17BE8C47B412B6C982496 /* Pods-CoPylot_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoPylot_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		70CC9CFB11D040CB30C659AD /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		751ABB4C158FAEAA8F773A59 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		770FDE272BE4AD483EBD9341 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		77A460FBEA4A398A382E5116 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		7C07F4F2BAB27AC342557556 /* Pods-CoPylot_Tests-CoPylot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-CoPylot_Tests-CoPylot.modulemap"; path = "../Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot.modulemap"; sourceTree = "<group>"; };
+		7C29D1507A99B8223A6A1D6B /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		7DBD2FED491CF918BB837FA2 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		7FFAB09C189047E6900A7ACD /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		80E5348F6BEF31A5EE523F91 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		8A89E218A211E0E5F056F80B /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		8B20654C58FE7E99741DD888 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		8C1309F32118C560ACF25231 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		8C733DC075E79EF622A886C3 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8E2E90D0B4C966593B742C /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		8D69746C94B7BA95ACBEF830 /* Pods-CoPylot_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoPylot_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E77C6A2F5845462A4B757C2 /* Pods-CoPylot_Example-CoPylot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Example-CoPylot.xcconfig"; sourceTree = "<group>"; };
+		8F16A6059F1B5E6CF75F41E3 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		9089EAB0A03EF68B279CC3A4 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		91E0CBD62CE5AFFCC10BE385 /* Pods-CoPylot_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
+		951AE4C18C6A175CFFEE9721 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		9909730D0A28FBB25404FC77 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		99D70B78DCD41EEF19CE8807 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		9B0F2C75A92FD1566036AAFE /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		9C493E236A170C71ECF7D29D /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		9D8FA2E11BFA51664C8C9C34 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		A36D5E9272E1046DC5C4795D /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		A6C84EFBA6F2B2CA959D16EE /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		AF7BE4558133E5A8CEA5DF1C /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		B149D0B6150E7D8691A83046 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		B1D988F3BB4B3B3A2F053D4B /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		B38E75BB265B1F410190B190 /* Pods-CoPylot_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Tests-environment.h"; sourceTree = "<group>"; };
+		B42F734430217E6BA03758B7 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		B87F4C44EC8AAAAED4716039 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		B8C8E93D3F043B38B390C30F /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		B9687091C0F6E115B6DCB60F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B979D008CB1AE4631FB467DB /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		BB3CE539974363B28204D2A6 /* Pods-CoPylot_Tests-CoPylot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CoPylot_Tests-CoPylot-dummy.m"; path = "../Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot-dummy.m"; sourceTree = "<group>"; };
+		BC435930F485E40DDF789312 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		BC7CF8139510165C71C8B945 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		BDA1C5653954AF9774B67961 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		BE13DF438BF0BB34B18BE26A /* Pods-CoPylot_Example-CoPylot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Example-CoPylot-prefix.pch"; sourceTree = "<group>"; };
+		BE5814F757387D0DBAF89758 /* Pods-CoPylot_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoPylot_Tests.modulemap"; sourceTree = "<group>"; };
+		BEFCFF94C5F4DB7408F5BEEA /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		BFA0E27801C974A36FFAB236 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		C2D12EE2ADD30EF5342E9653 /* Pods-CoPylot_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		C4DC5FB3D9B998995070393B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C51D407F45EBD4BAE3CAEB22 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		C63685C2327BAC3F22C49609 /* Pods-CoPylot_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoPylot_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C66E9DE0CAABF6864A191898 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		C75857036B460F8B6C5376D8 /* Pods-CoPylot_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C89D0A845FBB073DE0C5F712 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		C92BF1DF669ECB8FB0C42494 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		CC63B3CEA80F1093F91BFBF1 /* Pods-CoPylot_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D1DB5757D8DB8B2884220C1A /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		D5CB78D75E00CE895C755BA7 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		D724C90C51ECB4C8183AB182 /* Pods-CoPylot_Example-CoPylot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Example-CoPylot-umbrella.h"; sourceTree = "<group>"; };
+		D8CB15C8187E1B1C5C3A8972 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		DA863C6D28D578501BD6EF02 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		DADE2520352A82608E371E5D /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		DB942FD0C039DBC56FAD11CC /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
+		DC254FFFBFB348EFB835F057 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		DC86916025525E99801DCDB8 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		DCA722D93B282E9ADD8F2E55 /* Pods-CoPylot_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Example-environment.h"; sourceTree = "<group>"; };
+		DFB7BF1F2F656866D9DF4F2F /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		E1BAF19EE8160D0C1C70652C /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		E2B8A1DF550D83111F078224 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		E2CCE91819B6C28D433AE0F7 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		E37D4EFC5EFEB3AB78F24848 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		E4453E99226935B112000000 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		E5681F2CA1E90C1BEB813D7D /* Pods-CoPylot_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAAD57765CC519B01310E4A7 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		ED3F2FBEA45538E2CD36E71E /* Pods-CoPylot_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoPylot_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EDD8715CF561DE94B6B61B8E /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		EF95A4D863EE9671D1AA70CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC721B2FE00CF6DBAB3F46F /* CoPylot.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoPylot.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F021FC7777018CE553A0315D /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		F12343D2939BEF11C52BA4F3 /* Pods-CoPylot_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoPylot_Tests-Specta.modulemap"; sourceTree = "<group>"; };
+		F1DA5BC1C9774555D2F5313F /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		F266541F4BCBE3DE33CA65D5 /* Pods-CoPylot_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoPylot_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		F5D3DE52E0EF3DC0AAB83EFB /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		F7E5E40755C57028210F1521 /* Pods-CoPylot_Example-CoPylot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoPylot_Example-CoPylot-dummy.m"; sourceTree = "<group>"; };
+		F819A2FC103563484E4428E2 /* Pods-CoPylot_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoPylot_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		F9953D0B1BA78342BBFB5FA8 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		FC00B8E82CBBE8D61B1A07DC /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		FFECC56134E92E53CACD21B4 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C206364E6282287E61F3994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538FEFE329F01990F6058095 /* Foundation.framework in Frameworks */,
+				34378D09B3E82356ED2AE754 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D7EE6635FA5B925C141B5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2992B6D879F6F78FB1B59744 /* Foundation.framework in Frameworks */,
+				2D58A6988C442A4173FF2D85 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909A239CD86CD410FD75456F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C848C9052E8384C22A5DDA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31EC00613C243196FB03A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A207143E84A2F4B3907B644E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41F345802E36644CEF9E789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D19923FC2A79EE947845B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4832F782FD7177CCE1BC7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1321EE357B7444E67FAD4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DD0D095AE6F9A46545BC6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6330FA59B2465F1ACABE9F2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		079CAD087A7C443A858F44A4 /* Pods-CoPylot_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EF95A4D863EE9671D1AA70CB /* Info.plist */,
+				2761EFA77438B86DB795C244 /* Pods-CoPylot_Example.modulemap */,
+				2E765EB5C773232DD60A06FE /* Pods-CoPylot_Example-acknowledgements.markdown */,
+				07E2721844AB3A3CE12C411B /* Pods-CoPylot_Example-acknowledgements.plist */,
+				100E424AC21319F4C2621B13 /* Pods-CoPylot_Example-dummy.m */,
+				DCA722D93B282E9ADD8F2E55 /* Pods-CoPylot_Example-environment.h */,
+				ED3F2FBEA45538E2CD36E71E /* Pods-CoPylot_Example-frameworks.sh */,
+				0C2FA57F241F19ABC9B6783F /* Pods-CoPylot_Example-resources.sh */,
+				3B88B060D6BBB4730AE4421E /* Pods-CoPylot_Example-umbrella.h */,
+				C75857036B460F8B6C5376D8 /* Pods-CoPylot_Example.debug.xcconfig */,
+				CC63B3CEA80F1093F91BFBF1 /* Pods-CoPylot_Example.release.xcconfig */,
+			);
+			name = "Pods-CoPylot_Example";
+			path = "Target Support Files/Pods-CoPylot_Example";
+			sourceTree = "<group>";
+		};
+		110020FF20CEC4B6E629ADD4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				317C5CEEBFC9A78A67B11772 /* Foundation.framework */,
+				26D6CC1FC0D99BC228494E82 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		16DE8D7D4E3EE254A186EF1A /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				C51D407F45EBD4BAE3CAEB22 /* EXPBlockDefinedMatcher.h */,
+				5E0F782170CD0B5C4949C689 /* EXPBlockDefinedMatcher.m */,
+				F9953D0B1BA78342BBFB5FA8 /* EXPDefines.h */,
+				BEFCFF94C5F4DB7408F5BEEA /* EXPDoubleTuple.h */,
+				DA863C6D28D578501BD6EF02 /* EXPDoubleTuple.m */,
+				E1BAF19EE8160D0C1C70652C /* EXPExpect.h */,
+				80E5348F6BEF31A5EE523F91 /* EXPExpect.m */,
+				134A7BF15F9C20F66F57EFDB /* EXPFloatTuple.h */,
+				39FF365CBD9717D5148695D1 /* EXPFloatTuple.m */,
+				AF7BE4558133E5A8CEA5DF1C /* EXPMatcher.h */,
+				BFA0E27801C974A36FFAB236 /* EXPMatcherHelpers.h */,
+				DADE2520352A82608E371E5D /* EXPMatcherHelpers.m */,
+				7C29D1507A99B8223A6A1D6B /* EXPMatchers.h */,
+				8C1309F32118C560ACF25231 /* EXPMatchers+beCloseTo.h */,
+				094B9F3CF5CC3E7D3796626C /* EXPMatchers+beCloseTo.m */,
+				5A4D064190A03012EC9EF83A /* EXPMatchers+beFalsy.h */,
+				EAAD57765CC519B01310E4A7 /* EXPMatchers+beFalsy.m */,
+				BC435930F485E40DDF789312 /* EXPMatchers+beGreaterThan.h */,
+				E2B8A1DF550D83111F078224 /* EXPMatchers+beGreaterThan.m */,
+				5B9628ED2ECC2AC39B5DA94F /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				70CC9CFB11D040CB30C659AD /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				99D70B78DCD41EEF19CE8807 /* EXPMatchers+beIdenticalTo.h */,
+				E4453E99226935B112000000 /* EXPMatchers+beIdenticalTo.m */,
+				9B0F2C75A92FD1566036AAFE /* EXPMatchers+beInTheRangeOf.h */,
+				62E4EF502C2D90B9ED4D819F /* EXPMatchers+beInTheRangeOf.m */,
+				4B6E284DC645DA7C61BD6D65 /* EXPMatchers+beInstanceOf.h */,
+				1D8FFC808EDDA343255107F0 /* EXPMatchers+beInstanceOf.m */,
+				EDD8715CF561DE94B6B61B8E /* EXPMatchers+beKindOf.h */,
+				DC86916025525E99801DCDB8 /* EXPMatchers+beKindOf.m */,
+				6A166A966D33B06D5F521610 /* EXPMatchers+beLessThan.h */,
+				E37D4EFC5EFEB3AB78F24848 /* EXPMatchers+beLessThan.m */,
+				52F8C28CA7F297C6B865993D /* EXPMatchers+beLessThanOrEqualTo.h */,
+				3DCE87C6665DC98D5A73111B /* EXPMatchers+beLessThanOrEqualTo.m */,
+				1135ED34B83A936361A25699 /* EXPMatchers+beNil.h */,
+				38093F07F080B0F1A321680F /* EXPMatchers+beNil.m */,
+				B42F734430217E6BA03758B7 /* EXPMatchers+beSubclassOf.h */,
+				BC7CF8139510165C71C8B945 /* EXPMatchers+beSubclassOf.m */,
+				951AE4C18C6A175CFFEE9721 /* EXPMatchers+beSupersetOf.h */,
+				A36D5E9272E1046DC5C4795D /* EXPMatchers+beSupersetOf.m */,
+				E2CCE91819B6C28D433AE0F7 /* EXPMatchers+beTruthy.h */,
+				D8CB15C8187E1B1C5C3A8972 /* EXPMatchers+beTruthy.m */,
+				4C1BAB77DB34EA007381EBD6 /* EXPMatchers+beginWith.h */,
+				C89D0A845FBB073DE0C5F712 /* EXPMatchers+beginWith.m */,
+				5A82BF2ED94FEDB846095F71 /* EXPMatchers+conformTo.h */,
+				8F16A6059F1B5E6CF75F41E3 /* EXPMatchers+conformTo.m */,
+				9909730D0A28FBB25404FC77 /* EXPMatchers+contain.h */,
+				751ABB4C158FAEAA8F773A59 /* EXPMatchers+contain.m */,
+				F5D3DE52E0EF3DC0AAB83EFB /* EXPMatchers+endWith.h */,
+				8C8E2E90D0B4C966593B742C /* EXPMatchers+endWith.m */,
+				6731AEF7C811370DF3A8605B /* EXPMatchers+equal.h */,
+				A6C84EFBA6F2B2CA959D16EE /* EXPMatchers+equal.m */,
+				2C1D8EF94D9C44BF6B8BF1A3 /* EXPMatchers+haveCountOf.h */,
+				03294416BBE4EFD778D4282D /* EXPMatchers+haveCountOf.m */,
+				569C8DC05EA0369F6A1D721E /* EXPMatchers+match.h */,
+				DB942FD0C039DBC56FAD11CC /* EXPMatchers+match.m */,
+				4743DF0EE0243429B04A5EF2 /* EXPMatchers+postNotification.h */,
+				FC00B8E82CBBE8D61B1A07DC /* EXPMatchers+postNotification.m */,
+				09F7ABECF5E286F5D062F209 /* EXPMatchers+raise.h */,
+				B1D988F3BB4B3B3A2F053D4B /* EXPMatchers+raise.m */,
+				F1DA5BC1C9774555D2F5313F /* EXPMatchers+raiseWithReason.h */,
+				9C493E236A170C71ECF7D29D /* EXPMatchers+raiseWithReason.m */,
+				8B20654C58FE7E99741DD888 /* EXPMatchers+respondTo.h */,
+				0C80C834EB6740149B52009A /* EXPMatchers+respondTo.m */,
+				58E1FE0863C66C4FB0BBFE24 /* EXPUnsupportedObject.h */,
+				16ACA447356991A6E5D84DC7 /* EXPUnsupportedObject.m */,
+				9089EAB0A03EF68B279CC3A4 /* Expecta.h */,
+				482EF18707F1D77A63F47D06 /* ExpectaObject.h */,
+				770FDE272BE4AD483EBD9341 /* ExpectaObject.m */,
+				58A539448E2E588FAD565F18 /* ExpectaSupport.h */,
+				3A5626377D0F0F51B7EB94AA /* ExpectaSupport.m */,
+				DFB7BF1F2F656866D9DF4F2F /* NSObject+Expecta.h */,
+				3C26C0DD7EFE532801273C56 /* NSValue+Expecta.h */,
+				1521775EF0B26E2E5F838912 /* NSValue+Expecta.m */,
+				486C9B9A176C6DBF287B664E /* Support Files */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		2BAA303AF1720C067E23A728 = {
+			isa = PBXGroup;
+			children = (
+				C4DC5FB3D9B998995070393B /* Podfile */,
+				C0F36B6A6813F52E804E10A4 /* Development Pods */,
+				6CC3DE42F379F7EE79F0EB87 /* Frameworks */,
+				A74161E982DBC6B36A81F3C2 /* Pods */,
+				877DC1EDB42778F8D6F95007 /* Products */,
+				C6DC2D324D3BB0AB87955ADA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		36C80884679320C4CD55F7CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9687091C0F6E115B6DCB60F /* Info.plist */,
+				F12343D2939BEF11C52BA4F3 /* Pods-CoPylot_Tests-Specta.modulemap */,
+				F819A2FC103563484E4428E2 /* Pods-CoPylot_Tests-Specta.xcconfig */,
+				29524DEEC4056A262A825742 /* Pods-CoPylot_Tests-Specta-Private.xcconfig */,
+				3966AE2CAD3EEAC77789E9DA /* Pods-CoPylot_Tests-Specta-dummy.m */,
+				F266541F4BCBE3DE33CA65D5 /* Pods-CoPylot_Tests-Specta-prefix.pch */,
+				336EF2E491B01AEE56099772 /* Pods-CoPylot_Tests-Specta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CoPylot_Tests-Specta";
+			sourceTree = "<group>";
+		};
+		486C9B9A176C6DBF287B664E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2938048D1FAD1A65C7DFE88C /* Info.plist */,
+				686E03DD13DD0FACDC95A1FE /* Pods-CoPylot_Tests-Expecta.modulemap */,
+				2AE9FAC8A3F848DE2EA51B7A /* Pods-CoPylot_Tests-Expecta.xcconfig */,
+				C2D12EE2ADD30EF5342E9653 /* Pods-CoPylot_Tests-Expecta-Private.xcconfig */,
+				70B17BE8C47B412B6C982496 /* Pods-CoPylot_Tests-Expecta-dummy.m */,
+				53CB23BBCEFB92E31C3068C7 /* Pods-CoPylot_Tests-Expecta-prefix.pch */,
+				91E0CBD62CE5AFFCC10BE385 /* Pods-CoPylot_Tests-Expecta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CoPylot_Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		49A18411A0F922EC61A9179B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D2A279C322032E3DF44F1 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4B8D2A279C322032E3DF44F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB8CB6F111A2BF7EC3D5D0BA /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6CC3DE42F379F7EE79F0EB87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				110020FF20CEC4B6E629ADD4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0DAF7FB04FBB772572EA32 /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				33F6DF648BB395B60C4BF834 /* SPTCallSite.h */,
+				7FFAB09C189047E6900A7ACD /* SPTCallSite.m */,
+				05021312E50E250FB7D3F9BD /* SPTCompiledExample.h */,
+				DC254FFFBFB348EFB835F057 /* SPTCompiledExample.m */,
+				D5CB78D75E00CE895C755BA7 /* SPTExample.h */,
+				F021FC7777018CE553A0315D /* SPTExample.m */,
+				9D8FA2E11BFA51664C8C9C34 /* SPTExampleGroup.h */,
+				8A89E218A211E0E5F056F80B /* SPTExampleGroup.m */,
+				FFECC56134E92E53CACD21B4 /* SPTExcludeGlobalBeforeAfterEach.h */,
+				C66E9DE0CAABF6864A191898 /* SPTGlobalBeforeAfterEach.h */,
+				C92BF1DF669ECB8FB0C42494 /* SPTSharedExampleGroups.h */,
+				3AF652F7CACFC5D7796BEB3B /* SPTSharedExampleGroups.m */,
+				B87F4C44EC8AAAAED4716039 /* SPTSpec.h */,
+				B979D008CB1AE4631FB467DB /* SPTSpec.m */,
+				20544271D743B394BEE5D6D6 /* SPTTestSuite.h */,
+				040D591F36A8114597E0F36B /* SPTTestSuite.m */,
+				0A0E413E7445922C25FE561F /* Specta.h */,
+				BDA1C5653954AF9774B67961 /* SpectaDSL.h */,
+				691BD0761BFEA411F1DE3FCD /* SpectaDSL.m */,
+				77A460FBEA4A398A382E5116 /* SpectaTypes.h */,
+				B149D0B6150E7D8691A83046 /* SpectaUtility.h */,
+				7DBD2FED491CF918BB837FA2 /* SpectaUtility.m */,
+				B8C8E93D3F043B38B390C30F /* XCTest+Private.h */,
+				D1DB5757D8DB8B2884220C1A /* XCTestCase+Specta.h */,
+				4AED219E314DE4058A751FBC /* XCTestCase+Specta.m */,
+				36C80884679320C4CD55F7CE /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		877DC1EDB42778F8D6F95007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFC721B2FE00CF6DBAB3F46F /* CoPylot.bundle */,
+				3E6A12F9A1AC749EB7EE821F /* CoPylot.bundle */,
+				2CA6BA36CA740C91EA104D26 /* CoPylot.framework */,
+				1A4B76C8EE7E330BA7DC21A2 /* CoPylot.framework */,
+				8C733DC075E79EF622A886C3 /* Expecta.framework */,
+				47D05FA5EA9EBA0398D7DD16 /* Pods_CoPylot_Example.framework */,
+				36DC09FE5C1C3018A2923C88 /* Pods_CoPylot_Tests.framework */,
+				4E5B31703110842E2446722E /* Specta.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A74161E982DBC6B36A81F3C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16DE8D7D4E3EE254A186EF1A /* Expecta */,
+				7E0DAF7FB04FBB772572EA32 /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B291FFBD07F3D989F9301BEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				401534675AAF2551AD8ECAAF /* Info.plist */,
+				6C216C5E0AE02F5CD9EC139F /* Info.plist */,
+				54FE2EA6597E93C3B56D4BE0 /* Pods-CoPylot_Example-CoPylot.modulemap */,
+				8E77C6A2F5845462A4B757C2 /* Pods-CoPylot_Example-CoPylot.xcconfig */,
+				43E43003180171EDBA6C7E9B /* Pods-CoPylot_Example-CoPylot-Private.xcconfig */,
+				F7E5E40755C57028210F1521 /* Pods-CoPylot_Example-CoPylot-dummy.m */,
+				BE13DF438BF0BB34B18BE26A /* Pods-CoPylot_Example-CoPylot-prefix.pch */,
+				D724C90C51ECB4C8183AB182 /* Pods-CoPylot_Example-CoPylot-umbrella.h */,
+				7C07F4F2BAB27AC342557556 /* Pods-CoPylot_Tests-CoPylot.modulemap */,
+				46D64329536D8562881A3575 /* Pods-CoPylot_Tests-CoPylot.xcconfig */,
+				41CB88524BD340AD3C643254 /* Pods-CoPylot_Tests-CoPylot-Private.xcconfig */,
+				BB3CE539974363B28204D2A6 /* Pods-CoPylot_Tests-CoPylot-dummy.m */,
+				0C2464C8DDA31920AD41A12C /* Pods-CoPylot_Tests-CoPylot-prefix.pch */,
+				622D9295D70CF04BEBA5CC29 /* Pods-CoPylot_Tests-CoPylot-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-CoPylot_Example-CoPylot";
+			sourceTree = "<group>";
+		};
+		B44F6A57D16006BB433C5611 /* Pods-CoPylot_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5FEED6BE288068DC4BD9F01B /* Info.plist */,
+				BE5814F757387D0DBAF89758 /* Pods-CoPylot_Tests.modulemap */,
+				C63685C2327BAC3F22C49609 /* Pods-CoPylot_Tests-acknowledgements.markdown */,
+				8D69746C94B7BA95ACBEF830 /* Pods-CoPylot_Tests-acknowledgements.plist */,
+				4C3C43B20E07B89600B32077 /* Pods-CoPylot_Tests-dummy.m */,
+				B38E75BB265B1F410190B190 /* Pods-CoPylot_Tests-environment.h */,
+				2523C90F2D09A0EA83AD8294 /* Pods-CoPylot_Tests-frameworks.sh */,
+				50C2552DDCC336596D3B993A /* Pods-CoPylot_Tests-resources.sh */,
+				4DBACF70DE1DA7445F3FC02D /* Pods-CoPylot_Tests-umbrella.h */,
+				E5681F2CA1E90C1BEB813D7D /* Pods-CoPylot_Tests.debug.xcconfig */,
+				269717D377CF1D396DFB6CD4 /* Pods-CoPylot_Tests.release.xcconfig */,
+			);
+			name = "Pods-CoPylot_Tests";
+			path = "Target Support Files/Pods-CoPylot_Tests";
+			sourceTree = "<group>";
+		};
+		C0F36B6A6813F52E804E10A4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E10318DD4EEFCE41C813B289 /* CoPylot */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C6DC2D324D3BB0AB87955ADA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				079CAD087A7C443A858F44A4 /* Pods-CoPylot_Example */,
+				B44F6A57D16006BB433C5611 /* Pods-CoPylot_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E10318DD4EEFCE41C813B289 /* CoPylot */ = {
+			isa = PBXGroup;
+			children = (
+				49A18411A0F922EC61A9179B /* Pod */,
+				B291FFBD07F3D989F9301BEF /* Support Files */,
+			);
+			name = CoPylot;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		477217208455A557C0CD4783 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F68649987851DA6A462641 /* EXPBlockDefinedMatcher.h in Headers */,
+				1CEA5A810D53505AAF46020F /* EXPDefines.h in Headers */,
+				BAC337943EA9A4ACB4CD675F /* EXPDoubleTuple.h in Headers */,
+				C88575039D433F0A66645A31 /* EXPExpect.h in Headers */,
+				15C51BC0D09F1D002788AC48 /* EXPFloatTuple.h in Headers */,
+				EE0B7EA00554A12FA6CE3AE4 /* EXPMatcher.h in Headers */,
+				FC06802C635CE5894C31D4B9 /* EXPMatcherHelpers.h in Headers */,
+				C60153ED8FC2DAC5FA32CA45 /* EXPMatchers+beCloseTo.h in Headers */,
+				C0AA1A688DBFECBBECF4026F /* EXPMatchers+beFalsy.h in Headers */,
+				0BA31C62A1101C9AD4B391AE /* EXPMatchers+beGreaterThan.h in Headers */,
+				1594DD568AF3831978669CDD /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				79341B54AE457E60EA718DF4 /* EXPMatchers+beIdenticalTo.h in Headers */,
+				566C30F1D3D05A376B991E92 /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				5DD229BA3DD868413857B1D6 /* EXPMatchers+beInstanceOf.h in Headers */,
+				3D453137827BCC4D28BB1CF4 /* EXPMatchers+beKindOf.h in Headers */,
+				1FE7D8CF73B47BCDA62FBC2F /* EXPMatchers+beLessThan.h in Headers */,
+				1EA36CBFF58473339BE6C4B8 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				E40D678AE59897141459D9E2 /* EXPMatchers+beNil.h in Headers */,
+				6D06303DA142E783F008F3CE /* EXPMatchers+beSubclassOf.h in Headers */,
+				72F20F8E7D0624B637ED23CE /* EXPMatchers+beSupersetOf.h in Headers */,
+				772C7E513D65140CFE5E684D /* EXPMatchers+beTruthy.h in Headers */,
+				4BA46FB71239B5905E6A94EA /* EXPMatchers+beginWith.h in Headers */,
+				DE7CF848743DFABB306203CD /* EXPMatchers+conformTo.h in Headers */,
+				3B5EBC769664B1BE72B2A604 /* EXPMatchers+contain.h in Headers */,
+				BFB75AC2A543D67BD5E41F34 /* EXPMatchers+endWith.h in Headers */,
+				25AA4FCEAADC38E190158E31 /* EXPMatchers+equal.h in Headers */,
+				F81B648BB1E862741A9EA5A6 /* EXPMatchers+haveCountOf.h in Headers */,
+				C8DF06BC383FD6D98A9BB3B8 /* EXPMatchers+match.h in Headers */,
+				6B327D2F28B2BE3C788F7E8E /* EXPMatchers+postNotification.h in Headers */,
+				F906EC10045EA1F4F1263150 /* EXPMatchers+raise.h in Headers */,
+				D1DA2149822BB901CAD1B764 /* EXPMatchers+raiseWithReason.h in Headers */,
+				5F1C64A544CD9191C468B7C2 /* EXPMatchers+respondTo.h in Headers */,
+				CBD95993361B99631BEBE618 /* EXPMatchers.h in Headers */,
+				87C62A02C77FB7574F85AAE8 /* EXPUnsupportedObject.h in Headers */,
+				BC9B9B0904D6957F6325C28B /* Expecta.h in Headers */,
+				52DBB097031AC4AE1EF5670D /* ExpectaObject.h in Headers */,
+				41F9D2FDBA8F3D6D2FF93996 /* ExpectaSupport.h in Headers */,
+				2E78D33477A7DAED2B6AAC60 /* NSObject+Expecta.h in Headers */,
+				78BA9DED70B48C1E51608891 /* NSValue+Expecta.h in Headers */,
+				612455D788D3C46147067977 /* Pods-CoPylot_Tests-Expecta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A691A26E16D9AE1593DAC762 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BA2DF4F7EB0D8DA2331F52 /* Pods-CoPylot_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E571086BC7F84DB9C10B95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CE409E12132F33B8E0E8FC /* Pods-CoPylot_Tests-CoPylot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5055D1895010E423060AE03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4478A055E2BA9DF2DED1C4C9 /* Pods-CoPylot_Example-CoPylot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A4C82B025D352AB03FB8BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688815D937908D7A953EE290 /* Pods-CoPylot_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD03207B876AF10E962AE26B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B7C4C7F9F76FAF1F5299D /* Pods-CoPylot_Tests-Specta-umbrella.h in Headers */,
+				6B854623B5022AC4C49292FE /* SPTCallSite.h in Headers */,
+				00F1E56F0566397C8ECF20AC /* SPTCompiledExample.h in Headers */,
+				557FC0948B41B10ED04A9355 /* SPTExample.h in Headers */,
+				41F55D4655542F665B850F90 /* SPTExampleGroup.h in Headers */,
+				887FD61735369951F9795614 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
+				48F0FA768B5A5BA17C7935A9 /* SPTGlobalBeforeAfterEach.h in Headers */,
+				65F84BBF2DAB46079A5EB1E6 /* SPTSharedExampleGroups.h in Headers */,
+				C2FD003E5CAD8010E4DC9B2E /* SPTSpec.h in Headers */,
+				4E56CA277AEFEAC6111E70F9 /* SPTTestSuite.h in Headers */,
+				EB198166CF40DB0C2483BD71 /* Specta.h in Headers */,
+				9FA74ECDFBA1F5E88848265B /* SpectaDSL.h in Headers */,
+				102BFC377E3A878FA93BC607 /* SpectaTypes.h in Headers */,
+				F55F6498391FC89BE70BEEC8 /* SpectaUtility.h in Headers */,
+				81D3BDECB4057492943BCE8B /* XCTest+Private.h in Headers */,
+				AE9CA8288EAAB86FF9BDECE4 /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02E2C7E4EDEABFCFFED162ED /* Pods-CoPylot_Tests-CoPylot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC44267380806347CC190A8 /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-CoPylot" */;
+			buildPhases = (
+				A832632AF5E9F4112A9B8EA9 /* Sources */,
+				F8DD0D095AE6F9A46545BC6A /* Frameworks */,
+				10BB890E09573992F9213051 /* Resources */,
+				C6E571086BC7F84DB9C10B95 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000F087DCE9CD89EECF6DEB9 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoPylot_Tests-CoPylot";
+			productName = "Pods-CoPylot_Tests-CoPylot";
+			productReference = 2CA6BA36CA740C91EA104D26 /* CoPylot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13EC11CAF408D02D564F9805 /* Pods-CoPylot_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB52B3767F55621AB62355B /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests" */;
+			buildPhases = (
+				764CFB640AE0CCB8840D9743 /* Sources */,
+				F4832F782FD7177CCE1BC7EE /* Frameworks */,
+				A691A26E16D9AE1593DAC762 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				205A91F6D682CC53B674AA58 /* PBXTargetDependency */,
+				70E566B345610373D6FD7C40 /* PBXTargetDependency */,
+				B50941644104908706700B57 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoPylot_Tests";
+			productName = "Pods-CoPylot_Tests";
+			productReference = 36DC09FE5C1C3018A2923C88 /* Pods_CoPylot_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3003B5B07B2EB72A14A20CEE /* Pods-CoPylot_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A7360DE0F2FB1D902DC646F /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Example" */;
+			buildPhases = (
+				20C3306933FB8F11ACB14C2A /* Sources */,
+				909A239CD86CD410FD75456F /* Frameworks */,
+				E6A4C82B025D352AB03FB8BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2C892AED11D0AF96E2BA998 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoPylot_Example";
+			productName = "Pods-CoPylot_Example";
+			productReference = 47D05FA5EA9EBA0398D7DD16 /* Pods_CoPylot_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E3D0711C8412D5AAD34EC38 /* Pods-CoPylot_Tests-CoPylot-CoPylot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CCE9B6D5DC09A02975F3BB /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-CoPylot-CoPylot" */;
+			buildPhases = (
+				C59D05B9BD56687612C6B435 /* Sources */,
+				C1D19923FC2A79EE947845B3 /* Frameworks */,
+				5EC55EB31019D605E0B5BC89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CoPylot_Tests-CoPylot-CoPylot";
+			productName = "Pods-CoPylot_Tests-CoPylot-CoPylot";
+			productReference = EFC721B2FE00CF6DBAB3F46F /* CoPylot.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		78EA304F0A2A1E0F4B64570C /* Pods-CoPylot_Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3497EB8E9359CD047599AFA0 /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-Expecta" */;
+			buildPhases = (
+				76830E6EBD977D1B68308B0E /* Sources */,
+				3D7EE6635FA5B925C141B5F3 /* Frameworks */,
+				477217208455A557C0CD4783 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CoPylot_Tests-Expecta";
+			productName = "Pods-CoPylot_Tests-Expecta";
+			productReference = 8C733DC075E79EF622A886C3 /* Expecta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC4AB626286AE8BC9E28F65E /* Pods-CoPylot_Example-CoPylot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077CAC0615F57A65E7E51F0F /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Example-CoPylot" */;
+			buildPhases = (
+				9C380A3A2F5E6EAA07EF08D0 /* Sources */,
+				B31EC00613C243196FB03A60 /* Frameworks */,
+				2F359CAF37612F8AACEC19DB /* Resources */,
+				D5055D1895010E423060AE03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46192F9BAE809E46941BB0C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoPylot_Example-CoPylot";
+			productName = "Pods-CoPylot_Example-CoPylot";
+			productReference = 1A4B76C8EE7E330BA7DC21A2 /* CoPylot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D280C82270D066A4531EC639 /* Pods-CoPylot_Example-CoPylot-CoPylot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5646D670C4AE48ED80969342 /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Example-CoPylot-CoPylot" */;
+			buildPhases = (
+				161456B3A83C2D6E7CDF82A5 /* Sources */,
+				B41F345802E36644CEF9E789 /* Frameworks */,
+				56CB154BBAE4E85961F2E847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CoPylot_Example-CoPylot-CoPylot";
+			productName = "Pods-CoPylot_Example-CoPylot-CoPylot";
+			productReference = 3E6A12F9A1AC749EB7EE821F /* CoPylot.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D3A19BEAD9CEB0F258FBBABE /* Pods-CoPylot_Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C34FCD232E4AF8BCED4E31F /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-Specta" */;
+			buildPhases = (
+				CEBA06D41651B433D66A88E9 /* Sources */,
+				1C206364E6282287E61F3994 /* Frameworks */,
+				FD03207B876AF10E962AE26B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CoPylot_Tests-Specta";
+			productName = "Pods-CoPylot_Tests-Specta";
+			productReference = 4E5B31703110842E2446722E /* Specta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C20DE62B1E77395038BB710F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 24B6B3FE467789B2AC3ED8C0 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BAA303AF1720C067E23A728;
+			productRefGroup = 877DC1EDB42778F8D6F95007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3003B5B07B2EB72A14A20CEE /* Pods-CoPylot_Example */,
+				AC4AB626286AE8BC9E28F65E /* Pods-CoPylot_Example-CoPylot */,
+				D280C82270D066A4531EC639 /* Pods-CoPylot_Example-CoPylot-CoPylot */,
+				13EC11CAF408D02D564F9805 /* Pods-CoPylot_Tests */,
+				02E2C7E4EDEABFCFFED162ED /* Pods-CoPylot_Tests-CoPylot */,
+				5E3D0711C8412D5AAD34EC38 /* Pods-CoPylot_Tests-CoPylot-CoPylot */,
+				78EA304F0A2A1E0F4B64570C /* Pods-CoPylot_Tests-Expecta */,
+				D3A19BEAD9CEB0F258FBBABE /* Pods-CoPylot_Tests-Specta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10BB890E09573992F9213051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27948A64222F7D257E8A1A06 /* CoPylot.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F359CAF37612F8AACEC19DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443DAB0777DE058147B316BE /* CoPylot.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CB154BBAE4E85961F2E847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC55EB31019D605E0B5BC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		161456B3A83C2D6E7CDF82A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20C3306933FB8F11ACB14C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5BC87313BD5791147AB82A /* Pods-CoPylot_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764CFB640AE0CCB8840D9743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDA56A1AAAF69778CEA9DD8 /* Pods-CoPylot_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76830E6EBD977D1B68308B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8690656390947CBBC05B2D21 /* EXPBlockDefinedMatcher.m in Sources */,
+				F92FC138E24426CC15CCE1DE /* EXPDoubleTuple.m in Sources */,
+				EDBB1E304D7F14EBBCDC7BCD /* EXPExpect.m in Sources */,
+				1D28BF7C8C9FF033D0DDDD05 /* EXPFloatTuple.m in Sources */,
+				D325A55E9E2C65DE5616B258 /* EXPMatcherHelpers.m in Sources */,
+				6AD500BCEEB3CA94259AE93E /* EXPMatchers+beCloseTo.m in Sources */,
+				363CCCFDBD0122C5685C6064 /* EXPMatchers+beFalsy.m in Sources */,
+				6F27C7638F595B419B4CDCAF /* EXPMatchers+beGreaterThan.m in Sources */,
+				FD9335EB206790596F254694 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				A2DF9EDCDD36AA75CCE6A98B /* EXPMatchers+beIdenticalTo.m in Sources */,
+				C8C82539350B83FD8EFF0B43 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				A210372EC583616BAD4262AF /* EXPMatchers+beInstanceOf.m in Sources */,
+				F619F73205A109F5342C1048 /* EXPMatchers+beKindOf.m in Sources */,
+				141804C4DEDC35A018EB5FD4 /* EXPMatchers+beLessThan.m in Sources */,
+				62F2874B9282A6DA1AB21827 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				C4FEDE46649ED21E8F9FBC13 /* EXPMatchers+beNil.m in Sources */,
+				2712550DB8B93C673A43EB83 /* EXPMatchers+beSubclassOf.m in Sources */,
+				DF48DF2FEA26366EF9348B21 /* EXPMatchers+beSupersetOf.m in Sources */,
+				666093C3C3E545CB73969094 /* EXPMatchers+beTruthy.m in Sources */,
+				F511E9A61FDE4EBA60207BEF /* EXPMatchers+beginWith.m in Sources */,
+				3D63D4F3B775378A7D31E135 /* EXPMatchers+conformTo.m in Sources */,
+				137E1BB07B4712860400E052 /* EXPMatchers+contain.m in Sources */,
+				AC5C6C7B25DB420EE74A6C9E /* EXPMatchers+endWith.m in Sources */,
+				085F6C4C83550A28E9FF49A2 /* EXPMatchers+equal.m in Sources */,
+				58F9CF8A6857D3B25E9B309D /* EXPMatchers+haveCountOf.m in Sources */,
+				EE8B1B08E4A15EC024CA17A3 /* EXPMatchers+match.m in Sources */,
+				5892FFA5EB3ED98CE333E842 /* EXPMatchers+postNotification.m in Sources */,
+				C60028B1309B8EEBBB0FF77A /* EXPMatchers+raise.m in Sources */,
+				B0E8BAC7933EF2E246728A14 /* EXPMatchers+raiseWithReason.m in Sources */,
+				7E03C6315ECB4A901ECF12B7 /* EXPMatchers+respondTo.m in Sources */,
+				57211B2EB24981D044E668C5 /* EXPUnsupportedObject.m in Sources */,
+				3FBCC4341285BEDE2DE2DE21 /* ExpectaObject.m in Sources */,
+				3D25E6011A9593F5769BCECB /* ExpectaSupport.m in Sources */,
+				9985B7F53C5CEAE28C1DE2AF /* NSValue+Expecta.m in Sources */,
+				4FC4D05D35E9EA9CCA2A4A6E /* Pods-CoPylot_Tests-Expecta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C380A3A2F5E6EAA07EF08D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E0E9621CDF26D5A3CC73E4 /* Pods-CoPylot_Example-CoPylot-dummy.m in Sources */,
+				D93196255E2950332D922D18 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A832632AF5E9F4112A9B8EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE447425FDF6EEC9DC69A999 /* Pods-CoPylot_Tests-CoPylot-dummy.m in Sources */,
+				2988F7F3A2F9F6C7E0654AB8 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59D05B9BD56687612C6B435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBA06D41651B433D66A88E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735CBC6734BEA51FF24EF2CF /* Pods-CoPylot_Tests-Specta-dummy.m in Sources */,
+				EBBB37B14A69934B9E154EF7 /* SPTCallSite.m in Sources */,
+				F5A9807CA67D90F0C25501ED /* SPTCompiledExample.m in Sources */,
+				CDE038DD6AAF2971E5C79344 /* SPTExample.m in Sources */,
+				8E9D20EF0025DC8E42F15290 /* SPTExampleGroup.m in Sources */,
+				69D5FB74F4BC591C7BD54DF6 /* SPTSharedExampleGroups.m in Sources */,
+				957B24495030D25C6A4D0018 /* SPTSpec.m in Sources */,
+				6B0C1AE319C8798A2B5E795E /* SPTTestSuite.m in Sources */,
+				E9B5DE42408B259947D97BEA /* SpectaDSL.m in Sources */,
+				E18DE3C3405D6B5DEC8AD99C /* SpectaUtility.m in Sources */,
+				6703460DBF696FE0D3D57A97 /* XCTestCase+Specta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000F087DCE9CD89EECF6DEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoPylot_Tests-CoPylot-CoPylot";
+			target = 5E3D0711C8412D5AAD34EC38 /* Pods-CoPylot_Tests-CoPylot-CoPylot */;
+			targetProxy = 59B1BA04E4AE9A4A77730FBE /* PBXContainerItemProxy */;
+		};
+		205A91F6D682CC53B674AA58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoPylot_Tests-CoPylot";
+			target = 02E2C7E4EDEABFCFFED162ED /* Pods-CoPylot_Tests-CoPylot */;
+			targetProxy = 8175B6B9F52B56C693C32A3E /* PBXContainerItemProxy */;
+		};
+		46192F9BAE809E46941BB0C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoPylot_Example-CoPylot-CoPylot";
+			target = D280C82270D066A4531EC639 /* Pods-CoPylot_Example-CoPylot-CoPylot */;
+			targetProxy = A3646E0416A7F1F2CB3A1173 /* PBXContainerItemProxy */;
+		};
+		70E566B345610373D6FD7C40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoPylot_Tests-Expecta";
+			target = 78EA304F0A2A1E0F4B64570C /* Pods-CoPylot_Tests-Expecta */;
+			targetProxy = 3879F33CEC34139400E9AA00 /* PBXContainerItemProxy */;
+		};
+		B2C892AED11D0AF96E2BA998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoPylot_Example-CoPylot";
+			target = AC4AB626286AE8BC9E28F65E /* Pods-CoPylot_Example-CoPylot */;
+			targetProxy = C56F12FF1213A620544905D3 /* PBXContainerItemProxy */;
+		};
+		B50941644104908706700B57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CoPylot_Tests-Specta";
+			target = D3A19BEAD9CEB0F258FBBABE /* Pods-CoPylot_Tests-Specta */;
+			targetProxy = FA1405CBEC62B46AB430C168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EF53D8146B116468A3BF233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB88524BD340AD3C643254 /* Pods-CoPylot_Tests-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CoPylot_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1C0D2B5FB100A641E1B51872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D12EE2ADD30EF5342E9653 /* Pods-CoPylot_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Tests-Expecta/Pods-CoPylot_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests-Expecta/Pods-CoPylot_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53C424B83D289C6582237513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77E30430837A80DC9683F402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC63B3CEA80F1093F91BFBF1 /* Pods-CoPylot_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CoPylot_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F933994F4A61944E3A451EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E43003180171EDBA6C7E9B /* Pods-CoPylot_Example-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CoPylot_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		80BD05008E9B6D3A7CC66250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E43003180171EDBA6C7E9B /* Pods-CoPylot_Example-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CoPylot_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8E940197FE4F1519697487FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269717D377CF1D396DFB6CD4 /* Pods-CoPylot_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CoPylot_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90DBA156294C6EEBC211A583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75857036B460F8B6C5376D8 /* Pods-CoPylot_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CoPylot_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		937CC1632304E8374479774B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB88524BD340AD3C643254 /* Pods-CoPylot_Tests-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests-CoPylot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0C2A99CB51F8046E416DE75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB88524BD340AD3C643254 /* Pods-CoPylot_Tests-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests-CoPylot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests-CoPylot/Pods-CoPylot_Tests-CoPylot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B87C353B18E1FD7263F9E4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E43003180171EDBA6C7E9B /* Pods-CoPylot_Example-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Example-CoPylot/Pods-CoPylot_Example-CoPylot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Example-CoPylot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Example-CoPylot/Pods-CoPylot_Example-CoPylot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAA32115FF5414B511F6FCEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29524DEEC4056A262A825742 /* Pods-CoPylot_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Tests-Specta/Pods-CoPylot_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests-Specta/Pods-CoPylot_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA80920FA744168B2B7D3108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29524DEEC4056A262A825742 /* Pods-CoPylot_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Tests-Specta/Pods-CoPylot_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests-Specta/Pods-CoPylot_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFB93CB2F89E7513630A0374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5681F2CA1E90C1BEB813D7D /* Pods-CoPylot_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CoPylot_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7A2AB8DF155B95ACA6AE335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB88524BD340AD3C643254 /* Pods-CoPylot_Tests-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CoPylot_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E21C9AF731217AB6D49E17C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E248C5AA013BB7C3B7D2F9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E43003180171EDBA6C7E9B /* Pods-CoPylot_Example-CoPylot-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Example-CoPylot/Pods-CoPylot_Example-CoPylot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Example-CoPylot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Example-CoPylot/Pods-CoPylot_Example-CoPylot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CoPylot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F71D565B6E498BEE7ABEAFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D12EE2ADD30EF5342E9653 /* Pods-CoPylot_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CoPylot_Tests-Expecta/Pods-CoPylot_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoPylot_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CoPylot_Tests-Expecta/Pods-CoPylot_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		077CAC0615F57A65E7E51F0F /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Example-CoPylot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E248C5AA013BB7C3B7D2F9C6 /* Debug */,
+				B87C353B18E1FD7263F9E4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CCE9B6D5DC09A02975F3BB /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-CoPylot-CoPylot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A2AB8DF155B95ACA6AE335 /* Debug */,
+				0EF53D8146B116468A3BF233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24B6B3FE467789B2AC3ED8C0 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21C9AF731217AB6D49E17C9 /* Debug */,
+				53C424B83D289C6582237513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A7360DE0F2FB1D902DC646F /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DBA156294C6EEBC211A583 /* Debug */,
+				77E30430837A80DC9683F402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3497EB8E9359CD047599AFA0 /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-Expecta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0D2B5FB100A641E1B51872 /* Debug */,
+				F71D565B6E498BEE7ABEAFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5646D670C4AE48ED80969342 /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Example-CoPylot-CoPylot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F933994F4A61944E3A451EA /* Debug */,
+				80BD05008E9B6D3A7CC66250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C34FCD232E4AF8BCED4E31F /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA32115FF5414B511F6FCEA /* Debug */,
+				CA80920FA744168B2B7D3108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC44267380806347CC190A8 /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests-CoPylot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C2A99CB51F8046E416DE75 /* Debug */,
+				937CC1632304E8374479774B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB52B3767F55621AB62355B /* Build configuration list for PBXNativeTarget "Pods-CoPylot_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB93CB2F89E7513630A0374 /* Debug */,
+				8E940197FE4F1519697487FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C20DE62B1E77395038BB710F /* Project object */;
+}
