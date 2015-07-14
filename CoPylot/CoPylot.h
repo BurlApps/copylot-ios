@@ -12,28 +12,19 @@
 #import "CPBlock.h"
 #import "CPUtils.h"
 #import "CPLogger.h"
-#import "CPRequestHandler.h"
 #import "CPExtensions.h"
 
+@class CoPylot;
 @interface CoPylot : NSObject
 
-#pragma mark CoPylot Initialization
+// CoPylot Initialization
 + (CoPylot *)sharedInstanceWithAppID:(NSString *)appID andSecret:(NSString *)secret;
 + (instancetype)sharedInstance;
 
-@property (nonatomic, copy) NSString *appId;
-@property (nonatomic, copy) NSString *appSecret;
-@property (nonatomic, copy) NSString *installationID;
-
-#pragma mark Core Utilities
-@property (nonatomic, strong) CPRequestHandler *requestHandler;
-
-
-#pragma mark Block Tracking
+// Block Tracking
 @property (nonatomic, strong) NSMutableDictionary *blocks;
 
-
-#pragma mark Status Check
+// Status Check
 -(void)statusCheck;
 
 @end

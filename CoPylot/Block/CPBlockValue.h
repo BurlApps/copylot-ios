@@ -8,6 +8,7 @@
 
 #import "CPBlock.h"
 
+@class CPBlockValue;
 @interface CPBlockValue : CPBlock
 
 @end

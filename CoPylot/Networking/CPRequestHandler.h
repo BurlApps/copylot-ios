@@ -6,18 +6,23 @@
 //
 //
 
+#include <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 #import "CoPylot.h"
 
+@class CPRequestHandler;
 @interface CPRequestHandler : NSObject
 
 #pragma mark Request Handler Initialization
-- (instancetype)initWithCoPylot:(CoPylot *)copylot;
+- (instancetype)initWithAppID:(NSString *)appId andSecret:(NSString *)secret;
 
-@property (nonatomic, strong) CoPylot *copylot;
+@property (nonatomic, copy) NSString *appId;
+@property (nonatomic, copy) NSString *appSecret;
+@property (nonatomic, copy) NSString *installationID;
+@property (nonatomic, copy) NSString *payloadVersion;
 
 # pragma mark API Routes
-- (void)getPayloadwithHandler:(void(^)(BOOL, *NSError))handler;
+- (void)getPayloadwithHandler:(void(^)(id response, NSError *error))handler;
 
 @end

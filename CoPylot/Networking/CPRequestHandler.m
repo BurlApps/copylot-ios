@@ -11,30 +11,31 @@
 
 @implementation CPRequestHandler
 
-- (instancetype)initWithCoPylot:(CoPylot *)copylot {
-    self = [super init];
-    
-    if (self) {
-        self.copylot = copylot;
+- (instancetype)initWithAppID:(NSString *)appId andSecret:(NSString *)secret {
+    if (self = [self init]) {
+        self.appId = appId;
+        self.appSecret = secret;
+        self.installationID = @"";
     }
     
     return self;
 }
 
-- (void)getPayload:withHandler(void(^)(BOOL, *NSError))handler {
+- (void)getPayloadwithHandler:(void(^)(id response, NSError *error))handler {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = [NSString stringWithFormat: @"%@%@", CoPylotAPIBaseURL, @"payload"];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:
-        [self.copylot appId] password: [self.copylot appSecret]];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername: self.appId password: self.appSecret];
     
-    [manager GET:url parameters:@[
-        "installation" : [self.copylot installationID]
-    ] success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+    [manager GET:url parameters:@{
+        @"installation": self.installationID
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        self.installationID = responseObject[@"installation"];
+        
+        handler(responseObject[@"platform"], nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+        handler(nil, error);
     }];
 }
 

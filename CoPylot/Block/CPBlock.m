@@ -11,4 +11,8 @@
 
 @implementation CPBlock
 
+- (void)newPayload:(id)payload {
+    [self.delegate blockUpdated:payload[0][@"text"]];
+}
+
 @end
