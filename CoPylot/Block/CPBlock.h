@@ -8,17 +8,31 @@
 
 #import <Foundation/Foundation.h>
 
-@class CPBlock;
+#import "CoPylot.h"
+#import "CoPylotBlock.h"
+
+@class CoPylot, CPBlock;
 @protocol CPBlockDelegate;
 
 @interface CPBlock : NSObject
 
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, assign) CoPylot *copylot;
+@property (nonatomic, strong) id delegate;
+@property (nonatomic, strong) NSString *slug;
+@property (nonatomic, strong) CoPylotBlock *data;
 
-- (void)newPayload:(id)payload;
+- (instancetype)init;
+- (void)newPayload:(CoPylotBlock *)block;
+- (void)registerBlock;
+- (void)hasNewVariables;
+- (NSString *)buildText:(NSDictionary *)variables;
+- (NSAttributedString *)buildAttrText:(NSDictionary *)variables;
 
 @end
 
 @protocol CPBlockDelegate <NSObject>
-- (void)blockUpdated:(NSString *)text;
+
+- (void)wasUpdated;
+- (void)blockDataWithHandler:(void(^)(NSString *text, NSDictionary *variables))handler;
+
 @end

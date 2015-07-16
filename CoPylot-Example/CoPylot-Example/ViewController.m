@@ -19,11 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    CPLabel *label = [[CPLabel alloc] initWithName:@"test"];
+    CPLabel *label = [[CPLabel alloc] initWithTitle:@"test"];
+    label.variables = @{
+        @"user name": @"Chris"
+    };
+    
     label.text = @"Start Test String!";
-    label.frame = self.view.frame;
+    label.frame = CGRectMake(0, 40, self.view.frame.size.width, 400);
     label.textAlignment = NSTextAlignmentCenter;
+    label.font = [label.font fontWithSize:35];
     [self.view addSubview:label];
+    
+    CPLabel *label2 = [[CPLabel alloc] initWithTitle:@"login label"];
+    label2.text = @"Bob";
+    label2.variables = @{ @"price": @123 };
 }
 
 - (void)didReceiveMemoryWarning {

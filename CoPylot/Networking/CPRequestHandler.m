@@ -16,6 +16,7 @@
         self.appId = appId;
         self.appSecret = secret;
         self.installationID = @"";
+        self.payloadVersion = @"";
     }
     
     return self;
@@ -29,12 +30,18 @@
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername: self.appId password: self.appSecret];
     
     [manager GET:url parameters:@{
-        @"installation": self.installationID
-    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        self.installationID = responseObject[@"installation"];
+        @"installation": self.installationID,
+        @"version": self.payloadVersion
+    } success:^(AFHTTPRequestOperation *operation, id response) {        
+        self.installationID = [response[@"installation"] stringValue];
+        BOOL isNew = [response[@"newPayload"] boolValue];
         
-        handler(responseObject[@"platform"], nil);
+        if(isNew) {
+            self.payloadVersion = [response[@"platform"][@"version"] stringValue];
+            handler(response[@"platform"], nil);
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
         handler(nil, error);
     }];
 }

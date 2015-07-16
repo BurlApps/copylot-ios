@@ -12,20 +12,14 @@
 #endif
 
 #import "CoPylot.h"
-#import "CPRequestHandler.h"
-
-@interface CoPylot()
-
-// Request Handler
-@property (nonatomic, strong) CPRequestHandler *requestHandler;
-
-@end
+#import "CoPylotBlock.h"
 
 @implementation CoPylot
 
 - (instancetype)initWithAppId:(NSString *)appId andSecret:(NSString *)secret {
     if (self = [self init]) {
-        self.blocks = [[NSMutableDictionary alloc] init];
+        self.blocks = [NSMutableArray array];
+        self.hasLoaded = false;
         self.requestHandler = [[CPRequestHandler alloc] initWithAppID:appId andSecret:secret];
     }
     
@@ -53,11 +47,17 @@ static dispatch_once_t sharedInstancedWithAppID;
 
 -(void)statusCheck {
     [self.requestHandler getPayloadwithHandler:^(id response, NSError *error) {
-        id blocks = response[@"blocks"];
+        self.hasLoaded = true;
+        self.payload = [[CoPyotPayload alloc] initWithPayload:response];
         
-        for(NSString *slug in blocks) {
-            CPBlock *block = self.blocks[slug];
-            [block newPayload:blocks[slug][@"payload"]];
+        for(CPBlock *block in self.blocks) {
+            CoPylotBlock *blockModel = [self.payload.blocks objectForKey:block.slug];
+            
+            if(blockModel != nil) {
+                [block newPayload:blockModel];
+            } else {
+                [block registerBlock];
+            }
         }
     }];
 }

@@ -6,25 +6,38 @@
 //
 //
 
-#import "CoPylot.h"
 #import "CPLabel.h"
 
 @implementation CPLabel
 
-- (instancetype)initWithName:(NSString *)title {
+
+- (instancetype)initWithTitle:(NSString *)title {
     self = [super init];
+    
     if (self) {
-        CoPylot *copylot = [CoPylot sharedInstance];
         CPBlock *block = [[CPBlock alloc] init];
         
+        self.block = block;
+        self.numberOfLines = 0;
+        
         block.delegate = self;
-        copylot.blocks[title] = block;
+        block.slug = [title lowercaseString];
     }
+    
     return self;
 }
 
-- (void)blockUpdated:(NSString *)text {
-    self.text = text;
+-(void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
+    [self wasUpdated];
+}
+
+- (void)wasUpdated {
+    self.text = [self.block buildText:self.variables];
+}
+
+- (void)blockDataWithHandler:(void(^)(NSString *text, NSDictionary *variables))handler {
+    handler(self.text, self.variables);
 }
 
 @end

@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [CoPylot sharedInstanceWithAppID:@"12" andSecret:@"GnuVcJi0DyzCyiYpCSAAMdTMtUn6KRotPH62"];
+    [CoPylot sharedInstanceWithAppID:@"1" andSecret:@"dl1If9vEhSdRrejAY3xeMpu8WZ56lqbbpvCI"];
 
     return YES;
 }

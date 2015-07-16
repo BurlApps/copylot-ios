@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "CPBlock.h"
 
 @class CPLabel;
 @interface CPLabel : UILabel <CPBlockDelegate>
 
-- (instancetype)initWithName:(NSString *)title;
+@property (nonatomic, strong) CPBlock *block;
+@property (nonatomic, strong) NSDictionary *variables;
+
+- (instancetype)initWithTitle:(NSString *)title;
 
 @end

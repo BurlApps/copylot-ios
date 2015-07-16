@@ -16,12 +16,14 @@
 		D31896EA1B55B07A00A60725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31896E81B55B07A00A60725 /* LaunchScreen.xib */; };
 		D31896F61B55B07A00A60725 /* CoPylot_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31896F51B55B07A00A60725 /* CoPylot_ExampleTests.m */; };
 		D31897141B55B09B00A60725 /* CPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897021B55B09B00A60725 /* CPBlock.m */; };
-		D31897151B55B09B00A60725 /* CPBlockValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897041B55B09B00A60725 /* CPBlockValue.m */; };
 		D31897161B55B09B00A60725 /* CoPylot.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897061B55B09B00A60725 /* CoPylot.m */; };
 		D31897171B55B09B00A60725 /* CPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897091B55B09B00A60725 /* CPConstants.m */; };
 		D31897181B55B09B00A60725 /* CPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D318970C1B55B09B00A60725 /* CPUtils.m */; };
 		D31897191B55B09B00A60725 /* CPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897101B55B09B00A60725 /* CPLabel.m */; };
 		D318971A1B55B09B00A60725 /* CPRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897131B55B09B00A60725 /* CPRequestHandler.m */; };
+		D318B5DB1B5705DB00FEEBE0 /* CoPyotPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = D318B5DA1B5705DB00FEEBE0 /* CoPyotPayload.m */; };
+		D318B5DE1B57068300FEEBE0 /* CoPylotBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D318B5DD1B57068300FEEBE0 /* CoPylotBlock.m */; };
+		D318B5E41B57086900FEEBE0 /* CoPylotBlockSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D318B5E31B57086900FEEBE0 /* CoPylotBlockSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,6 @@
 		D31896F51B55B07A00A60725 /* CoPylot_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoPylot_ExampleTests.m; sourceTree = "<group>"; };
 		D31897011B55B09B00A60725 /* CPBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlock.h; sourceTree = "<group>"; };
 		D31897021B55B09B00A60725 /* CPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlock.m; sourceTree = "<group>"; };
-		D31897031B55B09B00A60725 /* CPBlockValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlockValue.h; sourceTree = "<group>"; };
-		D31897041B55B09B00A60725 /* CPBlockValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlockValue.m; sourceTree = "<group>"; };
 		D31897051B55B09B00A60725 /* CoPylot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoPylot.h; sourceTree = "<group>"; };
 		D31897061B55B09B00A60725 /* CoPylot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoPylot.m; sourceTree = "<group>"; };
 		D31897081B55B09B00A60725 /* CPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPConstants.h; sourceTree = "<group>"; };
@@ -61,11 +61,16 @@
 		D318970A1B55B09B00A60725 /* CPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogger.h; sourceTree = "<group>"; };
 		D318970B1B55B09B00A60725 /* CPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUtils.h; sourceTree = "<group>"; };
 		D318970C1B55B09B00A60725 /* CPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUtils.m; sourceTree = "<group>"; };
-		D318970E1B55B09B00A60725 /* CPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPExtensions.h; sourceTree = "<group>"; };
 		D318970F1B55B09B00A60725 /* CPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLabel.h; sourceTree = "<group>"; };
 		D31897101B55B09B00A60725 /* CPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLabel.m; sourceTree = "<group>"; };
 		D31897121B55B09B00A60725 /* CPRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRequestHandler.h; sourceTree = "<group>"; };
 		D31897131B55B09B00A60725 /* CPRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRequestHandler.m; sourceTree = "<group>"; };
+		D318B5D91B5705DB00FEEBE0 /* CoPyotPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoPyotPayload.h; path = Models/CoPyotPayload.h; sourceTree = "<group>"; };
+		D318B5DA1B5705DB00FEEBE0 /* CoPyotPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoPyotPayload.m; path = Models/CoPyotPayload.m; sourceTree = "<group>"; };
+		D318B5DC1B57068300FEEBE0 /* CoPylotBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoPylotBlock.h; path = Models/CoPylotBlock.h; sourceTree = "<group>"; };
+		D318B5DD1B57068300FEEBE0 /* CoPylotBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoPylotBlock.m; path = Models/CoPylotBlock.m; sourceTree = "<group>"; };
+		D318B5E21B57086900FEEBE0 /* CoPylotBlockSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoPylotBlockSegment.h; path = Models/CoPylotBlockSegment.h; sourceTree = "<group>"; };
+		D318B5E31B57086900FEEBE0 /* CoPylotBlockSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoPylotBlockSegment.m; path = Models/CoPylotBlockSegment.m; sourceTree = "<group>"; };
 		FD83E3DEFC4ECAB8925D90E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +177,7 @@
 			children = (
 				D31897051B55B09B00A60725 /* CoPylot.h */,
 				D31897061B55B09B00A60725 /* CoPylot.m */,
+				D318B5D81B5705B800FEEBE0 /* Models */,
 				D31897001B55B09B00A60725 /* Block */,
 				D31897071B55B09B00A60725 /* Core */,
 				D318970D1B55B09B00A60725 /* Extensions */,
@@ -186,8 +192,6 @@
 			children = (
 				D31897011B55B09B00A60725 /* CPBlock.h */,
 				D31897021B55B09B00A60725 /* CPBlock.m */,
-				D31897031B55B09B00A60725 /* CPBlockValue.h */,
-				D31897041B55B09B00A60725 /* CPBlockValue.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -207,7 +211,6 @@
 		D318970D1B55B09B00A60725 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D318970E1B55B09B00A60725 /* CPExtensions.h */,
 				D318970F1B55B09B00A60725 /* CPLabel.h */,
 				D31897101B55B09B00A60725 /* CPLabel.m */,
 			);
@@ -221,6 +224,19 @@
 				D31897131B55B09B00A60725 /* CPRequestHandler.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		D318B5D81B5705B800FEEBE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D318B5D91B5705DB00FEEBE0 /* CoPyotPayload.h */,
+				D318B5DA1B5705DB00FEEBE0 /* CoPyotPayload.m */,
+				D318B5DC1B57068300FEEBE0 /* CoPylotBlock.h */,
+				D318B5DD1B57068300FEEBE0 /* CoPylotBlock.m */,
+				D318B5E21B57086900FEEBE0 /* CoPylotBlockSegment.h */,
+				D318B5E31B57086900FEEBE0 /* CoPylotBlockSegment.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +290,7 @@
 				TargetAttributes = {
 					D31896D51B55B07A00A60725 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = R5K2X99B7E;
 					};
 					D31896EE1B55B07A00A60725 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -360,12 +377,14 @@
 			files = (
 				D31897181B55B09B00A60725 /* CPUtils.m in Sources */,
 				D31896E21B55B07A00A60725 /* ViewController.m in Sources */,
+				D318B5DE1B57068300FEEBE0 /* CoPylotBlock.m in Sources */,
 				D31896DF1B55B07A00A60725 /* AppDelegate.m in Sources */,
-				D31897151B55B09B00A60725 /* CPBlockValue.m in Sources */,
 				D31897141B55B09B00A60725 /* CPBlock.m in Sources */,
 				D318971A1B55B09B00A60725 /* CPRequestHandler.m in Sources */,
 				D31897191B55B09B00A60725 /* CPLabel.m in Sources */,
 				D31897161B55B09B00A60725 /* CoPylot.m in Sources */,
+				D318B5DB1B5705DB00FEEBE0 /* CoPyotPayload.m in Sources */,
+				D318B5E41B57086900FEEBE0 /* CoPylotBlockSegment.m in Sources */,
 				D31896DC1B55B07A00A60725 /* main.m in Sources */,
 				D31897171B55B09B00A60725 /* CPConstants.m in Sources */,
 			);
@@ -494,7 +513,9 @@
 			baseConfigurationReference = FD83E3DEFC4ECAB8925D90E8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "CoPylot-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -505,7 +526,9 @@
 			baseConfigurationReference = CFB1F58192F7B7D4585E4D9E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "CoPylot-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
