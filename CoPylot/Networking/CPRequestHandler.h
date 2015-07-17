@@ -24,5 +24,8 @@
 
 # pragma mark API Routes
 - (void)getPayloadwithHandler:(void(^)(id response, NSError *error))handler;
+- (void)registerGlobalVariables:(NSDictionary *)variables;
+- (void)registerBlockVariables:(NSDictionary *)variables andID:(NSString *)blockID;
+- (void)registerBlockWithTitle:(NSString *)title andText:(NSString *)text andVariables:(NSDictionary *)variables;
 
 @end

@@ -16,5 +16,6 @@
 @property (nonatomic, assign) id json;
 @property (nonatomic, strong) NSString *version;
 @property (nonatomic, strong) NSMutableDictionary *blocks;
+@property (nonatomic, strong) NSMutableDictionary *variables;
 
 @end

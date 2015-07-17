@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *variable;
+@property (nonatomic, strong) NSString *source;
 @property (nonatomic, strong) NSDictionary *attributes;
 
 @end

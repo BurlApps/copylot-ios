@@ -15,6 +15,7 @@
         self.text = payload[@"text"];
         self.type = payload[@"type"];
         self.variable = payload[@"variable"];
+        self.source = payload[@"source"];
         self.attributes = payload[@"attributes"];
     }
     

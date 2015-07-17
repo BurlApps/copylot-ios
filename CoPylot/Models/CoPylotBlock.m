@@ -13,6 +13,7 @@
 
 - (instancetype)initWithPayload:(id)payload {
     if (self = [self init]) {
+        self.ID = payload[@"id"];
         self.slug = payload[@"slug"];
         self.variables = payload[@"variables"];
         self.segments = [NSMutableArray array];

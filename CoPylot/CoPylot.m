@@ -19,7 +19,8 @@
 - (instancetype)initWithAppId:(NSString *)appId andSecret:(NSString *)secret {
     if (self = [self init]) {
         self.blocks = [NSMutableArray array];
-        self.hasLoaded = false;
+        self.variables = [NSMutableDictionary dictionary];
+        self.hasLoaded = NO;
         self.requestHandler = [[CPRequestHandler alloc] initWithAppID:appId andSecret:secret];
     }
     
@@ -45,10 +46,26 @@ static dispatch_once_t sharedInstancedWithAppID;
     return sharedInstance;
 }
 
+- (void)hasNewVariables {
+    NSMutableDictionary *newVariables = [NSMutableDictionary dictionary];
+    
+    for(NSString *key in self.variables) {
+        if(![self.payload.variables objectForKey:key]) {
+            [newVariables setValue:[self.variables objectForKey:key] forKey:key];
+        }
+    }
+    
+    if(newVariables.count > 0) {
+        [self.requestHandler registerGlobalVariables: newVariables];
+    }
+}
+
 -(void)statusCheck {
     [self.requestHandler getPayloadwithHandler:^(id response, NSError *error) {
-        self.hasLoaded = true;
+        self.hasLoaded = YES;
         self.payload = [[CoPyotPayload alloc] initWithPayload:response];
+        
+        [self hasNewVariables];
         
         for(CPBlock *block in self.blocks) {
             CoPylotBlock *blockModel = [self.payload.blocks objectForKey:block.slug];

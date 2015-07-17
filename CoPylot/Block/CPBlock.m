@@ -34,22 +34,24 @@
 
 - (void)hasNewVariables {
     [self.delegate blockDataWithHandler:^(NSString *text, NSDictionary *variables) {
-        NSMutableArray *newVariables = [NSMutableArray array];
+        NSMutableDictionary *newVariables = [NSMutableDictionary dictionary];
         
-        for(NSString *variable in variables) {
-            if(![self.data.variables objectForKey:variable]) {
-                [newVariables addObject:variable];
+        for(NSString *key in variables) {
+            if(![self.data.variables objectForKey:key]) {
+                [newVariables setValue:[variables objectForKey:key] forKey:key];
             }
         }
         
-        NSLog(@"new var: %@", newVariables);
+        if(newVariables.count > 0) {
+            [self.copylot.requestHandler registerBlockVariables:newVariables andID: self.data.ID];
+        }
     }];
 }
 
 - (void)registerBlock {
     if(self.copylot.hasLoaded) {
         [self.delegate blockDataWithHandler:^(NSString *text, NSDictionary *variables) {
-            NSLog(@"%@ - %@ - %@", self.slug, text, variables);
+            [self.copylot.requestHandler registerBlockWithTitle:self.title andText:text andVariables:variables];
         }];
     }
 }
@@ -61,8 +63,14 @@
         if([segment.type isEqual: @"text"]) {
             [text appendString: segment.text];
         } else if([segment.type isEqual: @"variable"]) {
-            if([variables objectForKey:segment.variable]) {
-                [text appendString: [variables objectForKey:segment.variable]];
+            NSDictionary *source = variables;
+            
+            if([segment.source isEqual: @"global"]) {
+                source = self.copylot.variables;
+            }
+            
+            if([source objectForKey:segment.variable]) {
+                [text appendString: [NSString stringWithFormat: @"%@", [source objectForKey: segment.variable]]];
             }
         }
     }
@@ -79,8 +87,14 @@
             
             [text appendAttributedString:attrText];
         } else if([segment.type isEqual: @"variable"]) {
-            if([variables objectForKey:segment.variable]) {
-                NSString *variable = [variables objectForKey:segment.variable];
+            NSDictionary *source = variables;
+            
+            if([segment.source isEqual: @"global"]) {
+                source = self.copylot.variables;
+            }
+            
+            if([source objectForKey:segment.variable]) {
+                NSString *variable = [NSString stringWithFormat: @"%@", [source objectForKey: segment.variable]];
                 NSMutableAttributedString *attrText = [[NSMutableAttributedString alloc] initWithString:variable];
                 
                 [text appendAttributedString:attrText];

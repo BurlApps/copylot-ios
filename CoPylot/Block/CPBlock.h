@@ -19,6 +19,7 @@
 @property (nonatomic, assign) CoPylot *copylot;
 @property (nonatomic, strong) id delegate;
 @property (nonatomic, strong) NSString *slug;
+@property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) CoPylotBlock *data;
 
 - (instancetype)init;

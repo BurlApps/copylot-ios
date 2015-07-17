@@ -6,6 +6,8 @@
 //
 //
 
+#import <objc/objc.h>
+
 #import "CPConstants.h"
 #import "CPRequestHandler.h"
 
@@ -22,9 +24,80 @@
     return self;
 }
 
+- (void)registerGlobalVariables:(NSDictionary *)variables {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *variableTypes = [NSMutableDictionary dictionary];
+    NSString *url = [NSString stringWithFormat: @"%@/variables", CoPylotAPIBaseURL];
+    
+    for(NSString *key in variables) {
+        id variable = [variables objectForKey:key];
+        NSString *type = NSStringFromClass([variable class]);
+        [variableTypes setValue:type forKey:key];
+    }
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername: self.appId password: self.appSecret];
+    
+    [manager POST:url parameters:@{
+       @"installation": self.installationID,
+       @"version": self.payloadVersion,
+       @"variables": variableTypes
+   } success:nil failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+       NSLog(@"%@", error);
+   }];
+}
+
+- (void)registerBlockVariables:(NSDictionary *)variables andID:(NSString *)blockID {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *variableTypes = [NSMutableDictionary dictionary];
+    NSString *url = [NSString stringWithFormat: @"%@/blocks/%@/variables", CoPylotAPIBaseURL, blockID];
+    
+    for(NSString *key in variables) {
+        id variable = [variables objectForKey:key];
+        NSString *type = NSStringFromClass([variable class]);
+        [variableTypes setValue:type forKey:key];
+    }
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername: self.appId password: self.appSecret];
+    
+    [manager POST:url parameters:@{
+      @"installation": self.installationID,
+      @"version": self.payloadVersion,
+      @"variables": variableTypes
+    } success:nil failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+          NSLog(@"%@", error);
+    }];
+}
+
+- (void)registerBlockWithTitle:(NSString *)title andText:(NSString *)text andVariables:(NSDictionary *)variables {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *variableTypes = [NSMutableDictionary dictionary];
+    NSString *url = [NSString stringWithFormat: @"%@/blocks/new", CoPylotAPIBaseURL];
+
+    for(NSString *key in variables) {
+        id variable = [variables objectForKey:key];
+        NSString *type = NSStringFromClass([variable class]);
+        [variableTypes setValue:type forKey:key];
+    }
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername: self.appId password: self.appSecret];
+    
+    [manager POST:url parameters:@{
+        @"installation": self.installationID,
+        @"version": self.payloadVersion,
+        @"title": title,
+        @"text": text,
+        @"variables": variableTypes
+    } success:nil failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+      NSLog(@"%@", error);
+    }];
+}
+
 - (void)getPayloadwithHandler:(void(^)(id response, NSError *error))handler {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSString *url = [NSString stringWithFormat: @"%@%@", CoPylotAPIBaseURL, @"payload"];
+    NSString *url = [NSString stringWithFormat: @"%@%@", CoPylotAPIBaseURL, @"/payload"];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername: self.appId password: self.appSecret];

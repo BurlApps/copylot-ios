@@ -26,6 +26,7 @@
 @property (nonatomic, assign) BOOL *hasLoaded;
 @property (nonatomic, strong) CoPyotPayload *payload;
 @property (nonatomic, strong) NSMutableArray *blocks;
+@property (nonatomic, strong) NSMutableDictionary *variables;
 
 // Request Handler
 @property (nonatomic, strong) CPRequestHandler *requestHandler;

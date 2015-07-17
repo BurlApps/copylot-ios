@@ -13,6 +13,7 @@
 
 - (instancetype)initWithPayload:(id)payload;
 
+@property (nonatomic, strong) NSString *ID;
 @property (nonatomic, strong) NSString *slug;
 @property (nonatomic, strong) NSDictionary *variables;
 @property (nonatomic, strong) NSMutableArray *segments;
