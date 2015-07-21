@@ -15,8 +15,8 @@
     if (self = [self init]) {
         self.json = payload;
         self.version = payload[@"version"];
+        self.variables = payload[@"variables"];
         self.blocks = [NSMutableDictionary dictionary];
-        self.variables = [NSMutableDictionary dictionary];
         
         id jsonBlocks = payload[@"blocks"];
         

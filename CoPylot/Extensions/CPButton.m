@@ -1,14 +1,14 @@
 //
-//  CPLabel+CPLabel.m
+//  CPButton.m
 //  CoPylot-Example
 //
 //  Created by Brian Vallelunga on 7/17/15.
 //  Copyright (c) 2015 Brian Vallelunga. All rights reserved.
 //
 
-#import "CPLabel.h"
+#import "CPButton.h"
 
-@implementation CPLabel
+@implementation CPButton
 
 - (instancetype)init {
     self = [super init];
@@ -52,11 +52,10 @@
     self.block = [[CPBlock alloc] init];
     self.block.delegate = self;
     
-    self.numberOfLines = 0;
     self.variables = [NSDictionary dictionary];
     
-    if([self respondsToSelector:@selector(title)]) {
-        [self setBlockTitle: [self valueForKey: @"title"]];
+    if([self respondsToSelector:@selector(blockTitle)]) {
+        [self setBlockTitle: [self valueForKey: @"blockTitle"]];
     }
 }
 
@@ -71,12 +70,13 @@
 
 - (void)wasUpdated {
     if(self.block.data != nil) {
-        self.attributedText = [self.block buildAttrText:self.attributedText withVariables:self.variables];
+        [self setAttributedTitle: [self.block buildAttrText:self.currentAttributedTitle withVariables:self.variables] forState:UIControlStateNormal];
+        [self sizeToFit];
     }
 }
 
 - (void)blockDataWithHandler:(void(^)(NSString *text, NSDictionary *variables))handler {
-    handler(self.text, self.variables);
+    handler(self.currentTitle, self.variables);
 }
 
 @end

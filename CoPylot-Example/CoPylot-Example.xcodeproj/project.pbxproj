@@ -19,11 +19,15 @@
 		D31897161B55B09B00A60725 /* CoPylot.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897061B55B09B00A60725 /* CoPylot.m */; };
 		D31897171B55B09B00A60725 /* CPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897091B55B09B00A60725 /* CPConstants.m */; };
 		D31897181B55B09B00A60725 /* CPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D318970C1B55B09B00A60725 /* CPUtils.m */; };
-		D31897191B55B09B00A60725 /* CPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897101B55B09B00A60725 /* CPLabel.m */; };
 		D318971A1B55B09B00A60725 /* CPRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D31897131B55B09B00A60725 /* CPRequestHandler.m */; };
 		D318B5DB1B5705DB00FEEBE0 /* CoPyotPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = D318B5DA1B5705DB00FEEBE0 /* CoPyotPayload.m */; };
 		D318B5DE1B57068300FEEBE0 /* CoPylotBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D318B5DD1B57068300FEEBE0 /* CoPylotBlock.m */; };
 		D318B5E41B57086900FEEBE0 /* CoPylotBlockSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D318B5E31B57086900FEEBE0 /* CoPylotBlockSegment.m */; };
+		D32CEC6C1B5D81F100075209 /* CPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D32CEC6B1B5D81F100075209 /* CPTextField.m */; };
+		D32CEC6F1B5D849600075209 /* CPTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D32CEC6E1B5D849600075209 /* CPTextView.m */; };
+		D32CEC721B5D850400075209 /* CPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32CEC711B5D850400075209 /* CPTableViewCell.m */; };
+		D3CC49CA1B59BFBD008029B4 /* CPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CC49C91B59BFBD008029B4 /* CPButton.m */; };
+		D3CC49CD1B59E27F008029B4 /* CPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CC49CC1B59E27F008029B4 /* CPLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +56,8 @@
 		D31896EF1B55B07A00A60725 /* CoPylot-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoPylot-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31896F41B55B07A00A60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D31896F51B55B07A00A60725 /* CoPylot_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoPylot_ExampleTests.m; sourceTree = "<group>"; };
-		D31897011B55B09B00A60725 /* CPBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBlock.h; sourceTree = "<group>"; };
-		D31897021B55B09B00A60725 /* CPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBlock.m; sourceTree = "<group>"; };
+		D31897011B55B09B00A60725 /* CPBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPBlock.h; path = ../Block/CPBlock.h; sourceTree = "<group>"; };
+		D31897021B55B09B00A60725 /* CPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPBlock.m; path = ../Block/CPBlock.m; sourceTree = "<group>"; };
 		D31897051B55B09B00A60725 /* CoPylot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoPylot.h; sourceTree = "<group>"; };
 		D31897061B55B09B00A60725 /* CoPylot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoPylot.m; sourceTree = "<group>"; };
 		D31897081B55B09B00A60725 /* CPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPConstants.h; sourceTree = "<group>"; };
@@ -62,7 +66,6 @@
 		D318970B1B55B09B00A60725 /* CPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUtils.h; sourceTree = "<group>"; };
 		D318970C1B55B09B00A60725 /* CPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUtils.m; sourceTree = "<group>"; };
 		D318970F1B55B09B00A60725 /* CPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLabel.h; sourceTree = "<group>"; };
-		D31897101B55B09B00A60725 /* CPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLabel.m; sourceTree = "<group>"; };
 		D31897121B55B09B00A60725 /* CPRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRequestHandler.h; sourceTree = "<group>"; };
 		D31897131B55B09B00A60725 /* CPRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRequestHandler.m; sourceTree = "<group>"; };
 		D318B5D91B5705DB00FEEBE0 /* CoPyotPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoPyotPayload.h; path = Models/CoPyotPayload.h; sourceTree = "<group>"; };
@@ -71,6 +74,15 @@
 		D318B5DD1B57068300FEEBE0 /* CoPylotBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoPylotBlock.m; path = Models/CoPylotBlock.m; sourceTree = "<group>"; };
 		D318B5E21B57086900FEEBE0 /* CoPylotBlockSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoPylotBlockSegment.h; path = Models/CoPylotBlockSegment.h; sourceTree = "<group>"; };
 		D318B5E31B57086900FEEBE0 /* CoPylotBlockSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoPylotBlockSegment.m; path = Models/CoPylotBlockSegment.m; sourceTree = "<group>"; };
+		D32CEC6A1B5D81F100075209 /* CPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTextField.h; sourceTree = "<group>"; };
+		D32CEC6B1B5D81F100075209 /* CPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTextField.m; sourceTree = "<group>"; };
+		D32CEC6D1B5D849600075209 /* CPTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTextView.h; sourceTree = "<group>"; };
+		D32CEC6E1B5D849600075209 /* CPTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTextView.m; sourceTree = "<group>"; };
+		D32CEC701B5D850400075209 /* CPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTableViewCell.h; sourceTree = "<group>"; };
+		D32CEC711B5D850400075209 /* CPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTableViewCell.m; sourceTree = "<group>"; };
+		D3CC49C81B59BFBD008029B4 /* CPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPButton.h; sourceTree = "<group>"; };
+		D3CC49C91B59BFBD008029B4 /* CPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPButton.m; sourceTree = "<group>"; };
+		D3CC49CC1B59E27F008029B4 /* CPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLabel.m; sourceTree = "<group>"; };
 		FD83E3DEFC4ECAB8925D90E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +190,6 @@
 				D31897051B55B09B00A60725 /* CoPylot.h */,
 				D31897061B55B09B00A60725 /* CoPylot.m */,
 				D318B5D81B5705B800FEEBE0 /* Models */,
-				D31897001B55B09B00A60725 /* Block */,
 				D31897071B55B09B00A60725 /* Core */,
 				D318970D1B55B09B00A60725 /* Extensions */,
 				D31897111B55B09B00A60725 /* Networking */,
@@ -187,18 +198,11 @@
 			path = ../CoPylot;
 			sourceTree = "<group>";
 		};
-		D31897001B55B09B00A60725 /* Block */ = {
+		D31897071B55B09B00A60725 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				D31897011B55B09B00A60725 /* CPBlock.h */,
 				D31897021B55B09B00A60725 /* CPBlock.m */,
-			);
-			path = Block;
-			sourceTree = "<group>";
-		};
-		D31897071B55B09B00A60725 /* Core */ = {
-			isa = PBXGroup;
-			children = (
 				D31897081B55B09B00A60725 /* CPConstants.h */,
 				D31897091B55B09B00A60725 /* CPConstants.m */,
 				D318970A1B55B09B00A60725 /* CPLogger.h */,
@@ -212,7 +216,15 @@
 			isa = PBXGroup;
 			children = (
 				D318970F1B55B09B00A60725 /* CPLabel.h */,
-				D31897101B55B09B00A60725 /* CPLabel.m */,
+				D3CC49CC1B59E27F008029B4 /* CPLabel.m */,
+				D3CC49C81B59BFBD008029B4 /* CPButton.h */,
+				D3CC49C91B59BFBD008029B4 /* CPButton.m */,
+				D32CEC6A1B5D81F100075209 /* CPTextField.h */,
+				D32CEC6B1B5D81F100075209 /* CPTextField.m */,
+				D32CEC6D1B5D849600075209 /* CPTextView.h */,
+				D32CEC6E1B5D849600075209 /* CPTextView.m */,
+				D32CEC701B5D850400075209 /* CPTableViewCell.h */,
+				D32CEC711B5D850400075209 /* CPTableViewCell.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,12 +389,16 @@
 			files = (
 				D31897181B55B09B00A60725 /* CPUtils.m in Sources */,
 				D31896E21B55B07A00A60725 /* ViewController.m in Sources */,
+				D32CEC721B5D850400075209 /* CPTableViewCell.m in Sources */,
+				D32CEC6C1B5D81F100075209 /* CPTextField.m in Sources */,
+				D3CC49CA1B59BFBD008029B4 /* CPButton.m in Sources */,
+				D3CC49CD1B59E27F008029B4 /* CPLabel.m in Sources */,
 				D318B5DE1B57068300FEEBE0 /* CoPylotBlock.m in Sources */,
 				D31896DF1B55B07A00A60725 /* AppDelegate.m in Sources */,
 				D31897141B55B09B00A60725 /* CPBlock.m in Sources */,
 				D318971A1B55B09B00A60725 /* CPRequestHandler.m in Sources */,
-				D31897191B55B09B00A60725 /* CPLabel.m in Sources */,
 				D31897161B55B09B00A60725 /* CoPylot.m in Sources */,
+				D32CEC6F1B5D849600075209 /* CPTextView.m in Sources */,
 				D318B5DB1B5705DB00FEEBE0 /* CoPyotPayload.m in Sources */,
 				D318B5E41B57086900FEEBE0 /* CoPylotBlockSegment.m in Sources */,
 				D31896DC1B55B07A00A60725 /* main.m in Sources */,

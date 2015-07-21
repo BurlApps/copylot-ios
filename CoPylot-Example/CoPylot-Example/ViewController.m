@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CPLabel.h"
+#import "CPButton.h"
 #import "ViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet CPButton *button;
+@property (weak, nonatomic) IBOutlet CPButton *marksButton;
 
 @end
 
@@ -19,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    CPLabel *label = [[CPLabel alloc] initWithTitle:@"test"];
+    CPLabel *label = [[CPLabel alloc] initWithTitle:@"login"];
     label.variables = @{
         @"user name": @"Chris"
     };
@@ -30,13 +34,6 @@
     label.font = [label.font fontWithSize:35];
     [self.view addSubview:label];
     
-    CPLabel *label2 = [[CPLabel alloc] initWithTitle:@"login label"];
-    label2.frame = CGRectMake(0, 300, self.view.frame.size.width, 400);
-    label2.text = @"Bob";
-    label2.textAlignment = NSTextAlignmentCenter;
-    label2.font = [label.font fontWithSize:35];
-    label2.variables = @{ @"price": @123, @"discount": @0.50, @"special": @5 };
-    [self.view addSubview:label2];
 }
 
 - (void)didReceiveMemoryWarning {

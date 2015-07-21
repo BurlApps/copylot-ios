@@ -1,17 +1,17 @@
 //
-//  CPLabel.h
-//  Pods
+//  CPButton.h
+//  CoPylot-Example
 //
-//  Created by Brian Vallelunga on 7/14/15.
-//
+//  Created by Brian Vallelunga on 7/17/15.
+//  Copyright (c) 2015 Brian Vallelunga. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 #import "CPBlock.h"
 
-@class CPLabel;
-@interface CPLabel : UILabel <CPBlockDelegate>
+@class CPButton;
+@interface CPButton : UIButton <CPBlockDelegate>
 
 @property (nonatomic, strong) CPBlock *block;
 @property (nonatomic, strong) NSDictionary *variables;
