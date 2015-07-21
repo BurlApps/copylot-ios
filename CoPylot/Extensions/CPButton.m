@@ -8,6 +8,13 @@
 
 #import "CPButton.h"
 
+@interface CPButton()
+
+@property (nonatomic, strong) CPBlock *block;
+@property (nonatomic, assign) BOOL isVisible;
+
+@end
+
 @implementation CPButton
 
 - (instancetype)init {

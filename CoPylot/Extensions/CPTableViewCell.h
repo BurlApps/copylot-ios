@@ -12,13 +12,13 @@
 @class CPTableViewCell;
 @interface CPTableViewCell : UITableViewCell  <CPBlockDelegate>
 
-@property (nonatomic, strong) CPBlock *block;
 @property (nonatomic, strong) NSDictionary *variables;
 
 - (instancetype)init;
 - (instancetype)initWithFrame:(CGRect)frame;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder;
 - (instancetype)initWithTitle:(NSString *)title;
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 - (void)setBlockTitle:(NSString *)title;
 
 @end

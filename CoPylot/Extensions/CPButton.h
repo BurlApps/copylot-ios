@@ -13,7 +13,6 @@
 @class CPButton;
 @interface CPButton : UIButton <CPBlockDelegate>
 
-@property (nonatomic, strong) CPBlock *block;
 @property (nonatomic, strong) NSDictionary *variables;
 
 - (instancetype)init;

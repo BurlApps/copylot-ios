@@ -13,7 +13,6 @@
 @class CPLabel;
 @interface CPLabel : UILabel <CPBlockDelegate>
 
-@property (nonatomic, strong) CPBlock *block;
 @property (nonatomic, strong) NSDictionary *variables;
 
 - (instancetype)init;

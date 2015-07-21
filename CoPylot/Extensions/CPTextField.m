@@ -8,6 +8,13 @@
 
 #import "CPTextField.h"
 
+@interface CPTextField()
+
+@property (nonatomic, strong) CPBlock *block;
+@property (nonatomic, assign) BOOL isVisible;
+
+@end
+
 @implementation CPTextField
 
 - (instancetype)init {

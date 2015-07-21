@@ -12,7 +12,6 @@
 @class  CPTextView;
 @interface CPTextView : UITextView <CPBlockDelegate>
 
-@property (nonatomic, strong) CPBlock *block;
 @property (nonatomic, strong) NSDictionary *variables;
 
 - (instancetype)init;

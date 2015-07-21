@@ -29,7 +29,15 @@
     self.title = title;
     self.slug = [title lowercaseString];
     
-    [self registerBlock];
+    CoPylotBlock *block = [self.copylot.payload.blocks objectForKey:self.slug];
+    
+    if(self.copylot.hasLoaded) {
+        if(block == nil) {
+            [self registerBlock];
+        } else {
+            [self newPayload:block];
+        }
+    }
 }
 
 - (void)newPayload:(CoPylotBlock *)block {
@@ -58,11 +66,9 @@
 }
 
 - (void)registerBlock {
-    if(self.copylot.hasLoaded && self.slug != nil && ![self.copylot.payload.blocks objectForKey:self.slug]) {
-        [self.delegate blockDataWithHandler:^(NSString *text, NSDictionary *variables) {
-            [self.copylot.requestHandler registerBlockWithTitle:self.title andText:text andVariables:variables];
-        }];
-    }
+    [self.delegate blockDataWithHandler:^(NSString *text, NSDictionary *variables) {
+        [self.copylot.requestHandler registerBlockWithTitle:self.title andText:text andVariables:variables];
+    }];
 }
 
 - (NSString *)buildText:(NSDictionary *)variables {
@@ -99,7 +105,7 @@
     [text beginEditing];
     
     for(CoPylotBlockSegment *segment in self.data.segments) {
-        NSMutableAttributedString *attrText;
+        NSMutableAttributedString *attrText = [[NSMutableAttributedString alloc] init];
         
         if([segment.type isEqual: @"text"]) {
             attrText = [[NSMutableAttributedString alloc] initWithString:segment.text];

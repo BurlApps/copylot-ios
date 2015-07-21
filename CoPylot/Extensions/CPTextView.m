@@ -8,6 +8,13 @@
 
 #import "CPTextView.h"
 
+@interface CPTextView()
+
+@property (nonatomic, strong) CPBlock *block;
+@property (nonatomic, assign) BOOL isVisible;
+
+@end
+
 @implementation CPTextView
 
 - (instancetype)init {

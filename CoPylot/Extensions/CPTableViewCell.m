@@ -8,10 +8,27 @@
 
 #import "CPTableViewCell.h"
 
+@interface CPTableViewCell()
+
+@property (nonatomic, strong) CPBlock *block;
+@property (nonatomic, assign) BOOL isVisible;
+
+@end
+
 @implementation CPTableViewCell
 
 - (instancetype)init {
     self = [super init];
+    
+    if (self) {
+        [self setUp];
+    }
+    
+    return self;
+}
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
         [self setUp];
@@ -62,8 +79,8 @@
     [self.block setBlockTitle: title];
 }
 
--(void)willMoveToSuperview:(UIView *)newSuperview {
-    [super willMoveToSuperview:newSuperview];
+-(void)layoutSubviews {
+    [super layoutSubviews];
     [self wasUpdated];
 }
 

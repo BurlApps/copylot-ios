@@ -8,6 +8,13 @@
 
 #import "CPLabel.h"
 
+@interface CPLabel()
+
+@property (nonatomic, strong) CPBlock *block;
+@property (nonatomic, assign) BOOL isVisible;
+
+@end
+
 @implementation CPLabel
 
 - (instancetype)init {

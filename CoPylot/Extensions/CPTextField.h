@@ -12,7 +12,6 @@
 @class CPTextField;
 @interface CPTextField : UITextField <CPBlockDelegate>
 
-@property (nonatomic, strong) CPBlock *block;
 @property (nonatomic, strong) NSDictionary *variables;
 
 - (instancetype)init;
