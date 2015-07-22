@@ -1,0 +1,6 @@
+framework module CoPylot {
+  umbrella header "Pods-CoPylot_Example-CoPylot-umbrella.h"
+
+  export *
+  module * { export * }
+}
