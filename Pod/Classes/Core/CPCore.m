@@ -18,9 +18,10 @@
 - (instancetype)initWithAppId:(NSString *)appId andSecret:(NSString *)secret {
     if (self = [self init]) {
         self.blocks = [NSMutableArray array];
-        self.variables = [NSMutableDictionary dictionary];
         self.hasLoaded = NO;
         self.requestHandler = [[CPRequestHandler alloc] initWithAppID:appId andSecret:secret];
+        
+        _variables = [NSMutableDictionary dictionary];
     }
     
     return self;
@@ -69,7 +70,7 @@ static dispatch_once_t sharedInstancedWithAppID;
     }
 }
 
--(void)setVariables:(NSMutableDictionary *)variables {
+-(void)setVariables:(NSDictionary *)variables {
     for(NSString *key in variables) {
         id variable = [variables objectForKey:key];
         [_variables setObject:variable forKey:key];

@@ -20,7 +20,10 @@
     // Override point for customization after application launch.
     CoPylot *copylot = [CoPylot sharedInstanceWithAppID:@"" andSecret:@""];
     [copylot setVariables:@{
-                           @"user name": @"brian"
+                            @"User ID": @1,
+                            @"User Name": @"Brian",
+                            @"User Email": @"brian@copylot.io",
+                            @"Store Discount": @0.5
                            }];
     return YES;
 }
