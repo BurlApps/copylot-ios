@@ -18,9 +18,10 @@
 - (instancetype)initWithAppId:(NSString *)appId andSecret:(NSString *)secret {
     if (self = [self init]) {
         self.blocks = [NSMutableArray array];
-        self.variables = [NSMutableDictionary dictionary];
         self.hasLoaded = NO;
         self.requestHandler = [[CPRequestHandler alloc] initWithAppID:appId andSecret:secret];
+        
+        _variables = [NSMutableDictionary dictionary];
     }
     
     return self;
@@ -54,17 +55,28 @@ static dispatch_once_t sharedInstancedWithAppID;
 }
 
 - (void)hasNewVariables {
-    NSMutableDictionary *newVariables = [NSMutableDictionary dictionary];
-    
-    for(NSString *key in self.variables) {
-        if(![self.payload.variables objectForKey:key]) {
-            [newVariables setValue:[self.variables objectForKey:key] forKey:key];
+    if(self.hasLoaded) {
+        NSMutableDictionary *newVariables = [NSMutableDictionary dictionary];
+        
+        for(NSString *key in self.variables) {
+            if(![self.payload.variables objectForKey:key]) {
+                [newVariables setValue:[self.variables objectForKey:key] forKey:key];
+            }
+        }
+        
+        if(newVariables.count > 0) {
+            [self.requestHandler registerGlobalVariables: newVariables];
         }
     }
-    
-    if(newVariables.count > 0) {
-        [self.requestHandler registerGlobalVariables: newVariables];
+}
+
+-(void)setVariables:(NSDictionary *)variables {
+    for(NSString *key in variables) {
+        id variable = [variables objectForKey:key];
+        [_variables setObject:variable forKey:key];
     }
+    
+    [self hasNewVariables];
 }
 
 -(void)statusCheck {

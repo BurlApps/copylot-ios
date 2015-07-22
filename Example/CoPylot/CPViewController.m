@@ -23,10 +23,11 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
-    CPLabel *label = [[CPLabel alloc] initWithTitle:@"login"];
-    label.variables = @{
-        @"user name": @"Chris"
-    };
+    CPLabel *label = [[CPLabel alloc] initWithTitle:@"welcome"];
+    
+    [label setVariables:@{
+                         @"Referrer's Name": @"Chris"
+                         }];
     
     label.text = @"Start Test String!";
     label.frame = CGRectMake(0, 40, self.view.frame.size.width, 250);
