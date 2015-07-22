@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { "Brian Vallelunga" => "vallelungabrian@gmail.com" }
   s.source           = { :git => "https://github.com/copylot/copylot-ios.git", :tag => "v#{s.version}" }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
