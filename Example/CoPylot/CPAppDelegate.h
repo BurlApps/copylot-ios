@@ -1,15 +1,17 @@
 //
-//  CPAppDelegate.h
-//  CoPylot
+//  AppDelegate.h
+//  CoPylot-Example
 //
-//  Created by Brian Vallelunga on 07/13/2015.
+//  Created by Brian Vallelunga on 7/14/15.
 //  Copyright (c) 2015 Brian Vallelunga. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface CPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+
 @end
+

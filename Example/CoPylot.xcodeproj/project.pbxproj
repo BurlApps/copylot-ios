@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3C44901CF159EADCB80DA2 /* Pods_CoPylot_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB70F23C8F914853772F38 /* Pods_CoPylot_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,9 +21,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		7F53CA1AB208EB719504AB81 /* Pods_CoPylot_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4887319C586BD5BDDCE9280 /* Pods_CoPylot_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		FE3069E3A278D10C8E638DB8 /* Pods_CoPylot_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C9552A5B8F5FB4E6434071 /* Pods_CoPylot_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		91A49A26BD1722FA38A5F4EB /* Pods_CoPylot_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1C184D4ED6A35F1EB8ABB /* Pods_CoPylot_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D3ECD2621B5EFDC300C9560C /* CPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ECD2611B5EFDC300C9560C /* CPTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0033D593A8C55441194F1B74 /* CoPylot.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoPylot.podspec; path = ../CoPylot.podspec; sourceTree = "<group>"; };
+		11B72D27F723B32ED1893DD6 /* Pods-CoPylot_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1A88EDB34283CE099FC62DDF /* Pods-CoPylot_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2E25174D3EF61CC7D82D030D /* Pods-CoPylot_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3AFB70F23C8F914853772F38 /* Pods_CoPylot_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoPylot_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		409CED997BD8C0DA1E652E21 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CoPylot_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoPylot_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,16 +62,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6089F9A734840592785CB026 /* Pods-CoPylot_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example.release.xcconfig"; sourceTree = "<group>"; };
+		706FD1B4FAE8F5F2A96ABAAB /* Pods-CoPylot_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		948B7CF99C5FC3632AF168E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B27E68D88AE18B98976AA0C3 /* Pods-CoPylot_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B32F1AB9BF1FFBDAFCC1AC72 /* Pods-CoPylot_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C0C9552A5B8F5FB4E6434071 /* Pods_CoPylot_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoPylot_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6FBE8D95D63B8159817194E /* Pods-CoPylot_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoPylot_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D4887319C586BD5BDDCE9280 /* Pods_CoPylot_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoPylot_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D62CD5594D163EADAAE179AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EA4F01E3B15215E19C56EBF2 /* CoPylot.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoPylot.podspec; path = ../CoPylot.podspec; sourceTree = "<group>"; };
+		961E12E32AD9785D73EF0E15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D3ECD2601B5EFDC300C9560C /* CPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTableViewController.h; sourceTree = "<group>"; };
+		D3ECD2611B5EFDC300C9560C /* CPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTableViewController.m; sourceTree = "<group>"; };
+		DAC1C184D4ED6A35F1EB8ABB /* Pods_CoPylot_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoPylot_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				FE3069E3A278D10C8E638DB8 /* Pods_CoPylot_Example.framework in Frameworks */,
+				1E3C44901CF159EADCB80DA2 /* Pods_CoPylot_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +89,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				7F53CA1AB208EB719504AB81 /* Pods_CoPylot_Tests.framework in Frameworks */,
+				91A49A26BD1722FA38A5F4EB /* Pods_CoPylot_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245C7FEEE25717B1B1EAC5B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11B72D27F723B32ED1893DD6 /* Pods-CoPylot_Example.debug.xcconfig */,
+				2E25174D3EF61CC7D82D030D /* Pods-CoPylot_Example.release.xcconfig */,
+				706FD1B4FAE8F5F2A96ABAAB /* Pods-CoPylot_Tests.debug.xcconfig */,
+				1A88EDB34283CE099FC62DDF /* Pods-CoPylot_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +115,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				E840F124DBBFCFBACDED4D7E /* Pods */,
+				245C7FEEE25717B1B1EAC5B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +135,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				C0C9552A5B8F5FB4E6434071 /* Pods_CoPylot_Example.framework */,
-				D4887319C586BD5BDDCE9280 /* Pods_CoPylot_Tests.framework */,
+				3AFB70F23C8F914853772F38 /* Pods_CoPylot_Example.framework */,
+				DAC1C184D4ED6A35F1EB8ABB /* Pods_CoPylot_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +144,8 @@
 		6003F593195388D20070C39A /* Example for CoPylot */ = {
 			isa = PBXGroup;
 			children = (
+				D3ECD2601B5EFDC300C9560C /* CPTableViewController.h */,
+				D3ECD2611B5EFDC300C9560C /* CPTableViewController.m */,
 				6003F59C195388D20070C39A /* CPAppDelegate.h */,
 				6003F59D195388D20070C39A /* CPAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -175,22 +191,11 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				EA4F01E3B15215E19C56EBF2 /* CoPylot.podspec */,
-				948B7CF99C5FC3632AF168E7 /* README.md */,
-				D62CD5594D163EADAAE179AB /* LICENSE */,
+				0033D593A8C55441194F1B74 /* CoPylot.podspec */,
+				961E12E32AD9785D73EF0E15 /* README.md */,
+				409CED997BD8C0DA1E652E21 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		E840F124DBBFCFBACDED4D7E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B27E68D88AE18B98976AA0C3 /* Pods-CoPylot_Example.debug.xcconfig */,
-				6089F9A734840592785CB026 /* Pods-CoPylot_Example.release.xcconfig */,
-				C6FBE8D95D63B8159817194E /* Pods-CoPylot_Tests.debug.xcconfig */,
-				B32F1AB9BF1FFBDAFCC1AC72 /* Pods-CoPylot_Tests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CoPylot_Example" */;
 			buildPhases = (
-				77F430326F7EDAD8A88F1353 /* Check Pods Manifest.lock */,
+				67E7FF13946B234AC76F649F /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				199DAD2ED2096595AC64275C /* Embed Pods Frameworks */,
-				29F9E715177CDEA468511803 /* Copy Pods Resources */,
+				0B7D9EA7C26694AE7FC9252C /* Embed Pods Frameworks */,
+				FD644B2D20DC9B1FC6203F29 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CoPylot_Tests" */;
 			buildPhases = (
-				9FD9D7D24A1373CEA5DC3D76 /* Check Pods Manifest.lock */,
+				653E646B77B55E7BB6A155AB /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				1B97C6D6D753C5EDAF463E32 /* Embed Pods Frameworks */,
-				2A9D88AFCD5428308EB1A695 /* Copy Pods Resources */,
+				9CC755B661C959B5D4DB9775 /* Embed Pods Frameworks */,
+				CF255FFDE79D594709533B0F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,7 +298,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		199DAD2ED2096595AC64275C /* Embed Pods Frameworks */ = {
+		0B7D9EA7C26694AE7FC9252C /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,7 +313,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1B97C6D6D753C5EDAF463E32 /* Embed Pods Frameworks */ = {
+		653E646B77B55E7BB6A155AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67E7FF13946B234AC76F649F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC755B661C959B5D4DB9775 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,22 +358,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		29F9E715177CDEA468511803 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2A9D88AFCD5428308EB1A695 /* Copy Pods Resources */ = {
+		CF255FFDE79D594709533B0F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,34 +373,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoPylot_Tests/Pods-CoPylot_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		77F430326F7EDAD8A88F1353 /* Check Pods Manifest.lock */ = {
+		FD644B2D20DC9B1FC6203F29 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9FD9D7D24A1373CEA5DC3D76 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoPylot_Example/Pods-CoPylot_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ECD2621B5EFDC300C9560C /* CPTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -508,7 +514,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B27E68D88AE18B98976AA0C3 /* Pods-CoPylot_Example.debug.xcconfig */;
+			baseConfigurationReference = 11B72D27F723B32ED1893DD6 /* Pods-CoPylot_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -523,7 +529,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6089F9A734840592785CB026 /* Pods-CoPylot_Example.release.xcconfig */;
+			baseConfigurationReference = 2E25174D3EF61CC7D82D030D /* Pods-CoPylot_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -538,7 +544,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6FBE8D95D63B8159817194E /* Pods-CoPylot_Tests.debug.xcconfig */;
+			baseConfigurationReference = 706FD1B4FAE8F5F2A96ABAAB /* Pods-CoPylot_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -561,7 +567,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B32F1AB9BF1FFBDAFCC1AC72 /* Pods-CoPylot_Tests.release.xcconfig */;
+			baseConfigurationReference = 1A88EDB34283CE099FC62DDF /* Pods-CoPylot_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

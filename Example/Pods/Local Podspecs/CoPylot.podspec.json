@@ -17,9 +17,15 @@
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "CoPylot": [
-      "Pod/Assets/*.png"
+  "public_header_files": [
+    "Pod/Classes/CoPylot.h",
+    "Pod/Classes/Core/CPCore.h",
+    "Pod/Classes/Extensions/*.h"
+  ],
+  "frameworks": "UIKit",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
     ]
   }
 }

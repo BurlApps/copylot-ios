@@ -48,12 +48,18 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'AFNetworking.framework'
   install_framework 'CoPylot.framework'
   install_framework 'Expecta.framework'
+  install_framework 'Expecta_Snapshots.framework'
+  install_framework 'FBSnapshotTestCase.framework'
   install_framework 'Specta.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'AFNetworking.framework'
   install_framework 'CoPylot.framework'
   install_framework 'Expecta.framework'
+  install_framework 'Expecta_Snapshots.framework'
+  install_framework 'FBSnapshotTestCase.framework'
   install_framework 'Specta.framework'
 fi
