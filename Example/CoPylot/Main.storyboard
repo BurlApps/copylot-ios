@@ -28,7 +28,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="blockTitle" value="button"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="blockTitle" value="Login Button"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="lva-wJ-Oay" kind="show" id="m9y-Dt-yEw"/>

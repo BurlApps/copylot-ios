@@ -19,7 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     CoPylot *copylot = [CoPylot sharedInstanceWithAppID:@"" andSecret:@""];
-    [copylot.variables setValue: @"brian" forKey: @"user name"];
+    [copylot setVariables:@{
+                           @"user name": @"brian"
+                           }];
     return YES;
 }
 
