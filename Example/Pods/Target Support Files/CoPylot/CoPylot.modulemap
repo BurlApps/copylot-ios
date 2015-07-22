@@ -1,0 +1,6 @@
+framework module CoPylot {
+  umbrella header "CoPylot-umbrella.h"
+
+  export *
+  module * { export * }
+}

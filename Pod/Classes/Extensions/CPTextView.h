@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CPBlock.h"
+
 @class  CPTextView;
 @protocol CPBlockDelegate;
 @interface CPTextView : UITextView <CPBlockDelegate>
 
+@property (nonatomic, strong) NSString *blockTitle;
 @property (nonatomic, strong) NSDictionary *variables;
 
 - (instancetype)initWithTitle:(NSString *)title;

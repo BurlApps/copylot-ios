@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/CoPylot.h', 'Pod/Classes/Core/CPCore.h', 'Pod/Classes/Extensions/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
 
   s.frameworks = 'UIKit'
   s.dependency 'AFNetworking', '~> 2.3'

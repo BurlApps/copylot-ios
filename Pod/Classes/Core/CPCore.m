@@ -30,9 +30,13 @@ static CoPylot *sharedInstance = nil;
 static dispatch_once_t sharedInstancedWithAppID;
 
 + (CoPylot *)sharedInstanceWithAppID:(NSString *)appID andSecret:(NSString *)secret {
-    dispatch_once(&sharedInstancedWithAppID, ^{
-        sharedInstance = [[self alloc] initWithAppId:appID andSecret:secret];
-    });
+    if(appID == nil || [appID isEqual:@""] || secret == nil || [secret isEqual:@""]) {
+        CPLog(@"App ID and Secret can't be nil or empty");
+    } else {
+        dispatch_once(&sharedInstancedWithAppID, ^{
+            sharedInstance = [[self alloc] initWithAppId:appID andSecret:secret];
+        });
+    }
     
     return sharedInstance;
 }
