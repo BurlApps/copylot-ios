@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CoPylot"
-  s.version          = "v0.1"
+  s.version          = "0.1"
   s.summary          = "iOS client for CoPylot."
   s.homepage         = "https://docs.copylot.io"
   s.license          = 'MIT'
