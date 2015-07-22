@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - CoPylot (0.1.0):
+  - CoPylot (0.1):
     - AFNetworking (~> 2.3)
   - Expecta (1.0.0)
   - Expecta+Snapshots (1.3.4):
@@ -42,10 +42,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  CoPylot: 8595e40e1975f5ba066162e0feb3e2f92e5694b6
+  CoPylot: 371fc6c96fa46f07fd9f4c9f19a39f15fb5574c9
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   Expecta+Snapshots: ca15bfb57e7a0f78f86c7699c2c54ffacfa4ad2a
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
   Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.0
