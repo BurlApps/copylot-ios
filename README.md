@@ -1,6 +1,6 @@
 # CoPylot
 
-[![CI Status](http://img.shields.io/travis/Brian Vallelunga/CoPylot.svg?style=flat)](https://travis-ci.org/copylot/copylot-ios)
+[![CI Status](http://img.shields.io/travis/copylot/copylot-ios.svg?style=flat)](https://travis-ci.org/copylot/copylot-ios)
 [![Version](https://img.shields.io/cocoapods/v/CoPylot.svg?style=flat)](http://cocoapods.org/pods/CoPylot)
 [![License](https://img.shields.io/cocoapods/l/CoPylot.svg?style=flat)](http://cocoapods.org/pods/CoPylot)
 [![Platform](https://img.shields.io/cocoapods/p/CoPylot.svg?style=flat)](http://cocoapods.org/pods/CoPylot)
