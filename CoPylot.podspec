@@ -9,12 +9,12 @@
 
 Pod::Spec.new do |s|
   s.name             = "CoPylot"
-  s.version          = "0.1"
+  s.version          = "v0.1"
   s.summary          = "iOS client for CoPylot."
   s.homepage         = "https://docs.copylot.io"
   s.license          = 'MIT'
   s.author           = { "Brian Vallelunga" => "vallelungabrian@gmail.com" }
-  s.source           = { :git => "https://github.com/copylot/copylot-ios.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/copylot/copylot-ios.git", :tag => "v#{s.version}" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
