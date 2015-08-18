@@ -16,5 +16,6 @@
 #import "CPTextField.h"
 #import "CPTextView.h"
 #import "CPString.h"
+#import "CPAttributedString.h"
 
 #endif
