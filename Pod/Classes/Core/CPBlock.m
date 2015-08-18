@@ -28,16 +28,6 @@
 - (void)setBlockTitle:(NSString *)title {
     self.title = title;
     self.slug = [title lowercaseString];
-    
-    CoPylotBlock *block = [self.copylot blockForSlug:self.slug];
-    
-    if(self.copylot.hasLoaded) {
-        if(block == nil) {
-            [self registerBlock];
-        } else {
-            [self newPayload:block];
-        }
-    }
 }
 
 - (void)newPayload:(CoPylotBlock *)block {
@@ -46,6 +36,18 @@
     if(self.delegate != nil) {
         [self.delegate wasUpdated];
         [self hasNewVariables];
+    }
+}
+
+-(void)prepare {
+    CoPylotBlock *block = [self.copylot blockForSlug:self.slug];
+    
+    if(self.copylot.hasLoaded) {
+        if(block == nil) {
+            [self registerBlock];
+        } else {
+            [self newPayload:block];
+        }
     }
 }
 
@@ -65,10 +67,15 @@
     }];
 }
 
-- (void)registerBlock {
-    [self.delegate blockDataWithHandler:^(NSString *text, NSDictionary *variables) {
-        [self.copylot.requestHandler registerBlockWithTitle:self.title andText:text andVariables:variables];
-    }];
+- (void)registerBlock {    
+    if(self.title != nil && [self.copylot blockForSlug:self.slug] == nil) {
+        [self.delegate blockDataWithHandler:^(NSString *text, NSDictionary *variables) {            
+            if(text == nil) text = @"";
+            if(variables == nil) variables = @{};
+            
+            [self.copylot.requestHandler registerBlockWithTitle:self.title andText:text andVariables:variables];
+        }];
+    }
 }
 
 - (NSString *)buildText:(NSDictionary *)variables {
@@ -97,8 +104,15 @@
 
 - (NSAttributedString *)buildAttrText:(NSAttributedString *)originalText withVariables:(NSDictionary *)variables {
     if(self.data == nil) return nil;
+    if(originalText == nil) originalText = [[NSAttributedString alloc] init];
     
-    NSDictionary *attrs = [originalText attributesAtIndex:0 effectiveRange:&((NSRange){0, [originalText length]})];
+    
+    NSDictionary *attrs = [NSDictionary dictionary];
+    
+    if([originalText length] > 0) {
+        attrs = [originalText attributesAtIndex:0 effectiveRange:&((NSRange){0, [originalText length]})];
+    }
+    
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] init];
     [text addAttributes:attrs range: (NSRange){0, [text length]}];
     

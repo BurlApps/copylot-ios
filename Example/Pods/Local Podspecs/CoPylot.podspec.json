@@ -2,7 +2,7 @@
   "name": "CoPylot",
   "version": "0.1",
   "summary": "iOS client for CoPylot.",
-  "homepage": "https://docs.copylot.io",
+  "homepage": "https://docs.copylot.io/docs/ios",
   "license": "MIT",
   "authors": {
     "Brian Vallelunga": "vallelungabrian@gmail.com"

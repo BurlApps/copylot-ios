@@ -82,7 +82,7 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    [self wasUpdated];
+    [self.block prepare];
 }
 
 - (void)wasUpdated {

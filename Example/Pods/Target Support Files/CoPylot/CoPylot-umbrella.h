@@ -7,6 +7,7 @@
 #import "CPLogger.h"
 #import "CPButton.h"
 #import "CPLabel.h"
+#import "CPString.h"
 #import "CPTableViewCell.h"
 #import "CPTextField.h"
 #import "CPTextView.h"

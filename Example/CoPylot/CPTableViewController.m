@@ -56,5 +56,16 @@
     return cell;
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *message = [CPString createWithTitle: @"popup" andVariables: @{
+        @"friend": [self.data objectAtIndex:indexPath.row]
+    } withDefault: @"hellow world"];
+    
+    [[[UIAlertView alloc] initWithTitle: @"Test Message" message:message
+                               delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] show];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+}
+
 
 @end
