@@ -15,5 +15,6 @@
 #import "CPTableViewCell.h"
 #import "CPTextField.h"
 #import "CPTextView.h"
+#import "CPString.h"
 
 #endif

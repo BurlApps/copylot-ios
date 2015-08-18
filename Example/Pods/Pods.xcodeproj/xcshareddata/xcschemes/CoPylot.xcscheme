@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B224F3F5DAF8A825C61568F"
+               BlueprintIdentifier = "0D2324F4DDFED165316C7D73"
                BuildableName = "CoPylot.framework"
                BlueprintName = "CoPylot"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -13,7 +13,6 @@
 @interface CPViewController ()
 
 @property (weak, nonatomic) IBOutlet CPButton *button;
-@property (weak, nonatomic) IBOutlet CPButton *marksButton;
 
 @end
 
@@ -22,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view, typically from a nib.
+    // Label 1
     CPLabel *label = [[CPLabel alloc] initWithTitle:@"welcome"];
     
     [label setVariables:@{
@@ -30,11 +29,10 @@
                          }];
     
     label.text = @"Start Test String!";
-    label.frame = CGRectMake(0, 40, self.view.frame.size.width, 250);
+    label.frame = CGRectMake(0, 40, self.view.frame.size.width, 150);
     label.textAlignment = NSTextAlignmentCenter;
-    label.font = [label.font fontWithSize:35];
+    label.font = [label.font fontWithSize:25];
     [self.view addSubview:label];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -73,7 +73,7 @@
 
 -(void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
-    [self wasUpdated];
+    [self.block prepare];
 }
 
 - (void)wasUpdated {

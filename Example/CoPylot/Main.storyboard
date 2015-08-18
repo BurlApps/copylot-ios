@@ -31,7 +31,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="blockTitle" value="Login Button"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="lva-wJ-Oay" kind="show" id="m9y-Dt-yEw"/>
+                                    <segue destination="lva-wJ-Oay" kind="show" id="kdc-mv-7a4"/>
                                 </connections>
                             </button>
                         </subviews>

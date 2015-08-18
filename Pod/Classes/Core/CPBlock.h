@@ -26,6 +26,7 @@
 - (void)newPayload:(CoPylotBlock *)block;
 - (void)registerBlock;
 - (void)hasNewVariables;
+- (void)prepare;
 - (void)setBlockTitle:(NSString *)title;
 - (NSString *)buildText:(NSDictionary *)variables;
 - (NSAttributedString *)buildAttrText:(NSAttributedString *)originalText withVariables:(NSDictionary *)variables;
