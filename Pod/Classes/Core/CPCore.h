@@ -27,7 +27,6 @@
 
 // Status Check
 -(void)statusCheck;
--(void)setVariables:(NSDictionary *)variables;
 -(CoPylotBlock *)blockForSlug:(NSString *)slug;
 
 @end
