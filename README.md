@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/CoPylot.svg?style=flat)](http://cocoapods.org/pods/CoPylot)
 
 CoPylot supports `Cocoapods` for easy installation. 
-To Install, see our **[full documentation »](https://docs.copylot.io)**
+To Install, see our **[full documentation »](https://copylot.readme.io)**
 
 
 **Want to Contribute?**
