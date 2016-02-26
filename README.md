@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/CoPylot.svg?style=flat)](http://cocoapods.org/pods/CoPylot)
 [![Platform](https://img.shields.io/cocoapods/p/CoPylot.svg?style=flat)](http://cocoapods.org/pods/CoPylot)
 
-CoPylot supports `Cocoapods` for easy installation. 
+CoPylot supports `CocoaPods` for easy installation. 
 To Install, see our **[full documentation »](https://copylot.readme.io)**
 
 
